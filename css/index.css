@@ -5,19 +5,50 @@ body{
     font-family: 'Noto Sans', sans-serif;
     margin: 0;
 }
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeueBook.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
 .header {
+    min-height: 100vh;
+}
+.header-image::after{
+    content:"";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(41, 45, 51, 0.6);
+    z-index: 0;
+}
+.header-image{
+    background-image: url('../image/header-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
 }
 .navbar {
     display: flex;
     align-items: center;
-    background-color: rgb(94, 88, 88);
     color: white;
     height: 94px;
+    z-index: 1;
+    position: relative;
+    border-bottom: 1px solid rgba(235, 235, 240, 0.2);
 }
 .header-logo {
     padding: 25px 50px;
+    border-right: 1px solid rgba(235, 235, 240, 0.2);
+    height: 100%;
 }
 .logo-light {
+    
 }
 .header-nav {
     display: flex;
@@ -51,6 +82,9 @@ body{
 .header-button {
     flex-shrink: 0;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .btn {
     font-weight: 600;
@@ -59,9 +93,63 @@ body{
     padding: 25px 60px;
     color: #FFFFFF;
     background-color: #3A71D1;
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
     border: none;
+    cursor: pointer;
+}
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    
+}
+.header-content{
+    padding-top: 150px;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    margin-bottom: 100px;
+}
+.header-title{
+    max-width: 1080px;
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 120%;
+    margin: 30px 0;
+}
+.header-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    max-width: 720px;
+    margin-bottom: 50px;
+}
+.seporator{
+    background: #5C8EE6;
+    width: 150px;
+    height: 2px;
+}
+
+.header-features {
+    display: flex;
+    min-height: 168px;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    z-index: 1;
+    border: 1px solid rgba(235, 235, 240, 0.2);
+}
+.haeder-features-items {
+    padding: 30px 50px;
+}
+.haeder-features-items:not(:last-child){
+    border-right: 1px solid rgba(235, 235, 240, 0.2);
+}
+.header-feat-img {
+}
+.haeder-features-text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #fff;
 }
