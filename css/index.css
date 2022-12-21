@@ -45,6 +45,14 @@ body{
 	left: 0;
 	top: 0;
     border-bottom: 1px solid rgba(235, 235, 240, 0.2);
+	transition: background-color 0.2s;
+}
+.navbar-light{
+	background: #fff;
+	color: #292D33;
+}
+.navbar-light .haeder-logo-path{
+	fill: #292D33;
 }
 .header-logo {
     padding: 25px 50px;
