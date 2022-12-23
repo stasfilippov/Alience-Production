@@ -31,14 +31,14 @@ body{
     background-image: url('../image/header-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center bottom -56px ;
     position: relative;
 }
 .navbar {
     display: flex;
     align-items: center;
     color: white;
-    height: 94px;
+    height: 96px;
     z-index: 2;
     position: fixed;
 	width: 100%;
@@ -58,7 +58,7 @@ body{
 .header-logo {
     display: flex;
     align-items: center;
-    padding: 0 50px;
+    padding: 0 52px;
     border-right: 1px solid rgba(235, 235, 240, 0.2);
     height: 100%;
 }
@@ -103,7 +103,7 @@ body{
 	font-weight: 600;
     font-size: 16px;
     line-height: 160%;
-    padding: 30px 50px;
+    padding: 30px 54px;
     color: #FFFFFF;
     background-color: #3A71D1;
     border: none;
@@ -113,7 +113,7 @@ body{
     font-weight: 600;
     font-size: 16px;
     line-height: 160%;
-    padding: 25px 60px;
+    padding: 26px 65px;
     color: #FFFFFF;
     background-color: #3A71D1;
     border: none;
@@ -134,17 +134,22 @@ body{
 .header-title{
     max-width: 1080px;
     font-family: 'Bebas Neue';
-    font-weight: 400;
+    font-weight: 600;
     font-size: 80px;
     line-height: 120%;
-    margin: 30px 0;
+    word-spacing: 0px;
+    margin-top: 23px;
+    letter-spacing: 0.8px;
+    margin-bottom: 39px;
 }
+
 .header-text{
     font-weight: 400;
     font-size: 16px;
     line-height: 160%;
     max-width: 720px;
     margin-bottom: 50px;
+    letter-spacing: 0.1px;
 }
 .seporator{
     background: #5C8EE6;
@@ -154,6 +159,7 @@ body{
 
 .header-features {
     display: flex;
+    width: 100%;
     min-height: 168px;
     padding: 0;
     list-style: none;
@@ -162,12 +168,14 @@ body{
     border: 1px solid rgba(235, 235, 240, 0.2);
 }
 .haeder-features-items {
-    padding: 30px 50px;
+    padding: 29px 51px;
+    width: 288px;
 }
 .haeder-features-items:not(:last-child){
     border-right: 1px solid rgba(235, 235, 240, 0.2);
 }
-.header-feat-img {
+.header-features-svg {
+    margin-bottom: 15px;
 }
 .haeder-features-text {
     margin: 0;
@@ -188,27 +196,30 @@ body{
 }
 .section-light-title {
 	font-family: 'Bebas Neue';
-	font-weight: 400;
+	font-weight: 600;
 	font-size: 60px;
 	line-height: 120%;
 	color: #292D33;
+    margin-top: 24px;
+    margin-bottom: 52px;
 }
 .section-step-list {
 	display: flex;
 	list-style: none;
 	padding: 0;
 	gap: 30px;
+    margin: 0;
 }
 .section-item {
-	max-width: 330px;
+	width: 330px;
 }
 .section-numb {
 	font-family: 'Bebas Neue';
-	font-weight: 400;
+	font-weight: 600;
 	font-size: 48px;
 	line-height: 120%;
 	color: #5C8EE6;
-	margin-bottom: 30px;
+	margin-bottom: 34px;
 	display: flex;
 	align-items: center;
 }
@@ -218,6 +229,10 @@ body{
 	height: 1px;
 	background: #EBEBF0;
 	width: 100%;
+}
+
+.section-item-w{
+    max-width: 300px;
 }
 .section-text {
 	font-weight: 400;
@@ -232,6 +247,7 @@ body{
 	line-height: 160%;
 	color: #828A99;
 	margin-bottom: 20px;
+    margin-top: 11px;
 }
 .section-step-link{
 	font-weight: 600;
