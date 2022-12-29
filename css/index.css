@@ -280,44 +280,44 @@ body{
 	margin-right: 1.25rem;
 	width: 2.5rem;
 }
-@media screen and (max-width: 2100px) {
+@media all and (max-width: 2100px) {
     .header-image{
         background-position: center ;
     }
 }
 
-@media screen and (max-width: 1830px) {
+@media all and (max-width: 1830px) {
     html{
         font-size: 15px;
     };
     
 }
 
-@media screen and (max-width: 1720px) {
+@media all and (max-width: 1720px) {
     html{
         font-size: 14px;
     };
 }
 
-@media screen and (max-width: 1600px) {
+@media all and (max-width: 1600px) {
     .header-nav-item:last-child {
         margin-right: 0;
     }
 }
 
-@media screen and (max-width: 1560px) {
+@media all and (max-width: 1560px) {
     html{
         font-size: 13.5px;
     };
 }
 
-@media screen and (max-width: 1505px) {
+@media all and (max-width: 1505px) {
     .header-nav-item {
         margin-right: 1.25rem;
     }
 }
 
-@media screen and (max-width: 1400px) {
+@media all and (max-width: 1400px) {
     .header-nav{
         padding: 0 1.5625rem;
     }
@@ -326,19 +326,19 @@ body{
     }
 }
 
-@media screen and (max-width: 1320px) {
+@media all and (max-width: 1320px) {
     html{
         font-size: 13px;
     };
 }
 
-@media screen and (max-width: 1270px) {
+@media all and (max-width: 1270px) {
     html{
         font-size: 12.5px;
     };
 }
 
-@media screen and (max-width: 1220px) {
+@media all and (max-width: 1220px) {
     .header-phone {
         margin-right: 1.5625rem;
     }
