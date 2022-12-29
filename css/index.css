@@ -17,6 +17,9 @@ body{
     font-style: normal;
     }
 
+.mobile-menu{
+    display: none;
+}
 .header {
 	padding-top: 5.875rem;
     min-height: 100vh;
@@ -96,6 +99,7 @@ body{
 .phone{
     width: 1.5rem; 
     height: 1.5rem;
+    fill:#5C8EE6;
 }
 .header-phone-link {
     text-decoration: none;
@@ -117,6 +121,11 @@ body{
     background-color: #3A71D1;
     border: none;
     cursor: pointer;
+}
+.header-button-icon{
+    width: 1.5rem; 
+    height: 1.5rem;
+    display: none;
 }
 .btn {
     font-weight: 600;
@@ -199,12 +208,7 @@ body{
 .section {
 	margin: 9.375rem 0;
 }
-.section-light {
-}
-.container {
-}
-.seporator {
-}
+
 .section-light-title {
 	font-family: 'Bebas Neue';
 	font-weight: 600;
@@ -278,7 +282,7 @@ body{
 }
 @media screen and (max-width: 2100px) {
     .header-image{
-        background-position: center;
+        background-position: center ;
     }
 }
 
@@ -337,5 +341,112 @@ body{
 @media screen and (max-width: 1220px) {
     .header-phone {
         margin-right: 1.5625rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .header-button{
+        padding: 1.875rem 1.25rem;
+    }
+    .container{
+        max-width: 70rem;
+    }
+    .header-phone{
+        display: none;
+    }
+    .navbar{
+        height: 5rem;
+    }
+}
+@media screen and (max-width: 980px) {
+    html{
+        font-size: 12px;
+    };
+    .container{
+        max-width: 60rem;
+    }
+    .header-nav{
+        display: none;
+    }
+    .header-logo{
+        flex-grow: 1;
+        justify-content: center;
+    }
+    .mobile-menu-toggle{
+        width: 80px;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 1.8rem 2rem;
+        border-right: 1px solid rgba(235, 235, 240, 0.2);
+    }
+    .mobile-menu-line{
+        height: 1px;
+        background-color: #fff;
+        width: 100%;
+    }
+    .mobile-menu-line:nth-child(2) {
+        width: 80%;
+    }
+    .navbar-light .mobile-menu-line{
+        background-color:black;
+    }
+    .header-button-icon{
+        fill:white;
+        display: block;
+    }
+    .header-button-text{
+        display: none;
+    }
+    .header-button{
+        padding: 1.875rem;
+    }
+    .mobile-menu-nav{
+        padding: 0;
+    }
+    .mobile-menu{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+        z-index: 2;
+        background-color: #fff;
+        padding-top: 5rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .mobile-menu.is-open{
+        display: block;
+    }
+    .mobile-menu-nav-item{
+        margin-bottom: 1.875rem;
+        list-style: none;
+    }
+    .moble-menu-nav-link {
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 160%;
+        color: #292D33;
+    }
+    .mobile-submenu {
+        list-style: none;
+        margin-top: 1.25rem;
+        padding-left: 1.25rem;
+    }
+    .mobile-submenu-item {
+        margin-bottom: .625rem;
+    }
+    .mobile-submenu-link {
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 160%;
+        color: #828A99;
     }
 }
