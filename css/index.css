@@ -449,4 +449,37 @@ body{
         line-height: 160%;
         color: #828A99;
     }
+    .mobile-phone{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 160%;
+        text-decoration-line: underline;
+        color: #292D33;
+        border-top: 1px solid #EBEBF0;
+        display: block;
+        padding-top: 1.875rem;
+        margin-bottom: 1.25rem;
+    }
+    .mobile-info{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: .625rem;
+    }
+    .mobile-info-address, .mobile-info-email{
+        font-style: normal;
+        font-size: 14px;
+        line-height: 160%;
+        color: #292D33;
+        text-decoration: none;
+    }
+    .adress, .mail, .vk, .instagram {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .mobile-social{
+        display: flex;
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
 }
