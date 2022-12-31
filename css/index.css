@@ -177,17 +177,17 @@ body{
 
 .header-features {
     display: flex;
-    width: 100%;
     min-height: 10.5rem;
     padding: 0;
     list-style: none;
     position: relative;
     z-index: 1;
-    border: .0625rem solid rgba(235, 235, 240, 0.2);
 }
 .haeder-features-items {
     padding: 1.8125rem 3.1875rem;
+    min-height: 100%;
     width: 18rem;
+    border: .0625rem solid rgba(235, 235, 240, 0.2);
 }
 .haeder-features-items:not(:last-child){
     border-right: .0625rem solid rgba(235, 235, 240, 0.2);
