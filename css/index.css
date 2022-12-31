@@ -358,7 +358,7 @@ body{
         height: 5rem;
     }
 }
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 990px) {
     html{
         font-size: 12px;
     };
@@ -491,5 +491,39 @@ body{
     }
     .close-menu .mobile-menu-line:nth-child(3) {
         transform: rotate(-45deg) translateY(-9px);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        max-width: 60rem;
+    }
+    .header-title {
+        font-size: 4rem;
+    }
+}
+
+
+@media screen and (max-width: 786px) {
+    .container {
+        max-width: 40rem;
+    }
+    .header-title {
+        font-size: 3rem;
+    }
+    .header-content {
+        padding-top: 3rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        max-width: 90%;
+    }
+    .header-title {
+        font-size: 2rem;
+    }
+    .header-content {
+        padding-top: 2rem;
     }
 }
