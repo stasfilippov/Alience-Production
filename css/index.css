@@ -256,7 +256,7 @@ body{
 .section-numb:after{
 	margin-left: 1.875rem;
 	content:"";
-	height: .0625rem;
+	height: 1px;
 	background: #EBEBF0;
 	width: 100%;
 }
