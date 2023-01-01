@@ -22,7 +22,6 @@ body{
 }
 .header {
 	padding-top: 5.875rem;
-    min-height: 100vh;
 }
 .header-image::after{
     content:"";
@@ -204,6 +203,22 @@ body{
     line-height: 160%;
     color: #fff;
 }
+.sliders-buttons{
+    display: none;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+}
+.slider-button-prev, .slider-button-next {
+    height: 100%;
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid rgba(235, 235, 240, 0.2);
+}
+
 
 .section {
 	margin: 9.375rem 0;
@@ -280,6 +295,9 @@ body{
 	margin-right: 1.25rem;
 	width: 2.5rem;
 }
+
+
+
 @media all and (max-width: 2100px) {
     .header-image{
         background-position: center ;
@@ -357,6 +375,10 @@ body{
     .navbar{
         height: 5rem;
     }
+    .sliders-buttons{
+        display: flex;
+    }
+    
 }
 @media screen and (max-width: 990px) {
     html{
