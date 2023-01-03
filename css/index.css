@@ -188,7 +188,7 @@ body{
 .haeder-features-items {
     padding: 1.8125rem 3.1875rem;
     display: inline-block;
-    height: 10.5rem;
+    height: auto;
     width: 18rem;
     border: .0625rem solid rgba(235, 235, 240, 0.2);
 }
