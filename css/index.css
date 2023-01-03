@@ -317,30 +317,33 @@ body{
     }
 }
 
-@media all and (max-width: 1830px) {
+@media all and (max-width: 1840px) {
     html{
         font-size: 15px;
     };
     
 }
 
-@media all and (max-width: 1720px) {
+@media all and (max-width: 1725px) {
     html{
         font-size: 14px;
     };
 }
 
-@media all and (max-width: 1600px) {
+@media all and (max-width: 1650px) {
+    html{
+        font-size: 13px;
+    };
     .header-nav-item:last-child {
         margin-right: 0;
-    }
-}
-
-@media all and (max-width: 1560px) {
-    html{
-        font-size: 13.5px;
     };
 }
+
+/* @media all and (max-width: 1580px) {
+    html{
+        font-size: 13px;
+    };
+} */
 
 @media all and (max-width: 1505px) {
     .header-nav-item {
@@ -363,19 +366,19 @@ body{
     };
 }
 
+@media all and (max-width: 1280px) {
+    .header-phone {
+        margin-right: 1.5625rem;
+    }
+}
 @media all and (max-width: 1270px) {
     html{
         font-size: 12.5px;
     };
 }
 
-@media all and (max-width: 1220px) {
-    .header-phone {
-        margin-right: 1.5625rem;
-    }
-}
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1220px) {
     .header-button{
         padding: 1.875rem 1.25rem;
     }
@@ -393,7 +396,7 @@ body{
     }
     
 }
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1005px) {
     html{
         font-size: 12px;
     };
