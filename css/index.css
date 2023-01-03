@@ -23,6 +23,9 @@ body{
 .header {
 	padding-top: 5.875rem;
 }
+.logo-black{
+    display: none;
+}
 .header-image::after{
     content:"";
     position: absolute;
