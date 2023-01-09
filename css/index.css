@@ -586,7 +586,7 @@ body{
         padding-top: 2rem;
     }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) {
 	.step-item {
 		max-width: 200px;
 		height: 100%;
