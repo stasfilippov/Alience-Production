@@ -316,6 +316,22 @@ body{
 	background: #5C8EE6;
 	padding: 13px 17px;
 }
+
+.cards{
+	display: flex;
+	flex-wrap: wrap;
+}
+.card{
+	max-width: 480px;
+	border: .0625rem solid #EBEBF0;
+}
+.card-img{
+	min-width: 100%;
+}
+
+
+
+
 @media all and (max-width: 2100px) {
 	.header-image{
 		background-position: center ;
@@ -569,4 +585,10 @@ body{
     .header-content {
         padding-top: 2rem;
     }
+}
+@media screen and (max-width: 320px) {
+	.step-item {
+		max-width: 200px;
+		height: 100%;
+	}
 }
