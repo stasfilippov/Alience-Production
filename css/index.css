@@ -725,9 +725,12 @@ svg path {
         padding-top: 2rem;
     }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 376px) {
 	.step-item {
-		max-width: 200px;
+		max-width: 250px;
 		height: 100%;
 	}
+    .steps-list{
+        gap: 0;
+    }
 }
