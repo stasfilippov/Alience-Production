@@ -428,6 +428,17 @@ body{
 .labels-card:hover{
 	border-color: #5C8EE6;
 }
+.labels-card:hover .labels-card-title{
+    color:#5C8EE5;
+}
+svg path {
+    fill:inherit;
+    stroke:inherit;
+    stroke-width:inherit;
+}
+.labels-card:hover .labels-svg{
+    fill:#5C8EE5;
+}
 .labels-card-image{
 	display: flex;
 	align-items: center;
@@ -444,9 +455,6 @@ body{
 	color: #292D33;
 	margin: 0;
 	margin-bottom: .625rem;
-}
-.labels-card-title:hover{
-	color:#5C8EE5;
 }
 .labels-card-text{
 	font-size: 1rem;
