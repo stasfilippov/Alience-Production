@@ -712,6 +712,9 @@ svg path {
     .labels-card{
         flex-basis: 100%;
     }
+    .production-card-text{
+        margin-bottom: 25rem;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -724,6 +727,9 @@ svg path {
     .header-content {
         padding-top: 2rem;
     }
+    /* .production-card-text{
+        margin-bottom: 28rem;
+    } */
 }
 @media screen and (max-width: 376px) {
 	.step-item {
