@@ -360,24 +360,24 @@ body{
 	margin-top: 1.875rem;
 	margin-bottom: 3rem;
 }
-.cards{
+.production-cards{
 	display: flex;
 	flex-wrap: wrap;
 }
-.card{
+.production-card{
 	flex-basis: 33%;
 	border: .0625rem solid #EBEBF0;
 	position: relative;
 	text-decoration: none;
 	transition: border 0.2s;
 }
-.card:hover{
+.production-card:hover{
 	border-color: #5C8EE6;
 }
-.card:hover .card-title{
+.production-card-title:hover{
 	color: #5C8EE6;
 }
-.card-img{
+.production-card-img{
 	width: 100%;
 	position: absolute;
 	bottom: 0;
@@ -385,10 +385,10 @@ body{
 	right: 0;
 	z-index: 0;
 }
-.card-content{
+.production-card-content{
 	padding: 2.5rem 3.125rem;
 }
-.card-title{
+.production-card-title{
 	font-style: normal;
 	font-weight: 400;
 	font-size: 1.75rem;
@@ -397,13 +397,63 @@ body{
 	margin-top: 0;
 	margin-bottom: .625rem;
 }
-.card-text{
+.production-card-text{
 	font-size: 1rem;
 	line-height: 160%;
 	color: #828A99;
 	margin-bottom: 21.625rem;
 }
 
+/* СТИЛИ section-labels */
+.section-labels-title{
+	font-family: 'Bebas Neue';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 60px;
+	line-height: 120%;
+	color: #292D33;
+}
+.labels-cards{
+	display: flex;
+}
+.labels-card{
+	flex-basis: 50%;
+	display: flex;
+	align-items: center;
+	border: 1px solid #EBEBF0;
+	text-decoration: none;
+	cursor: pointer;
+}
+.labels-card:hover{
+	border-color: #5C8EE6;
+}
+.labels-card-image{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 4.375rem;
+}
+.labels-card-content{
+	padding: 3.0625rem 3.125rem 4.375rem 0;
+}
+.labels-card-title{
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 160%;
+	color: #292D33;
+	margin: 0;
+	margin-bottom: .625rem;
+}
+.labels-card-title:hover{
+	color:#5C8EE5;
+}
+.labels-card-text{
+	font-size: 16px;
+	line-height: 160%;
+	color: #828A99;
+	max-width: 22.5rem;
+	margin: 0;
+}
 @media all and (max-width: 2100px) {
 	.header-image{
 		background-position: center ;
