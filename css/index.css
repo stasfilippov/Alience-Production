@@ -77,6 +77,8 @@ body{
 }
 .header-nav {
     display: flex;
+	height: 100%;
+	align-items: center;
     flex-basis: 100%;
     list-style: none;
     padding: 0 3.125rem;
@@ -84,12 +86,33 @@ body{
 }
 .header-nav-item {
     margin-right: 3.125rem;
+	height: 100%;
+	display: flex;
+	align-items: center;
 }
 .header-nav-link {
     text-decoration: none;
     color: inherit;
     font-weight: 400;
     font-size: 1rem;
+	display: flex;
+	align-items: center;
+	height: 100%;
+	position: relative;
+}
+.header-nav-link::after{
+	content:"";
+	width: 100%;
+	height: 2px;
+	background: #5C8EE6;
+	position: absolute;
+	bottom: -1px;
+	transition: transform 0.2s;
+	transform: scaleX(0);
+
+}
+.header-nav-link:hover::after{
+	transform: scaleX(1);
 }
 .header-phone {
     display: flex;
@@ -149,7 +172,7 @@ body{
     position: relative;
     z-index: 1;
     color: #fff;
-    margin-bottom: 6.25rem;
+    margin-bottom: 6rem;
 }
 .header-title{
     max-width: 67.5rem;
@@ -184,6 +207,7 @@ body{
     list-style: none;
     position: relative;
     z-index: 1;
+	margin: 0;
 }
 .haeder-features-items {
     padding: 1.8125rem 3.1875rem;
@@ -223,11 +247,10 @@ body{
     border: 1px solid rgba(235, 235, 240, 0.2);
 }
 
-
-.section {
-	margin: 9.375rem 0;
+.section-steps {
+	margin-top: 150px;
+	margin-bottom: 60px;
 }
-
 .section-steps-title {
 	font-family: 'Bebas Neue';
 	font-weight: 600;
@@ -246,7 +269,7 @@ body{
     margin-bottom: 20px;
 }
 .step-item {
-	max-width: 300px;
+	max-width: 330px;
 	height: 100%;
 }
 .step-numb {
@@ -284,9 +307,9 @@ body{
 	line-height: 160%;
 	color: #828A99;
 	margin-bottom: 1.25rem;
-    margin-top: .6875rem;
+    margin-top: 0.675rem;
 }
-.step-step-link{
+.step-link{
 	font-weight: 600;
 	font-size: 1rem;
 	line-height: 160%;
@@ -295,12 +318,16 @@ body{
 	align-items:center;
 	text-decoration: none;
 }
-.step-step-link::before{
+.step-link::before{
 	content:"";
 	height: .0625rem;
 	background: #5C8EE6;
 	margin-right: 1.25rem;
 	width: 2.5rem;
+	transition: width 0.2s;
+}
+.step-link:hover::before{
+	width: 3.75rem;
 }
 .steps-buttons{
 	display: none;
@@ -317,20 +344,65 @@ body{
 	padding: 13px 17px;
 }
 
+
+/* СТИЛИ section-production */
+.production {
+	margin: 6.325rem 0;
+}
+.section-production-title{
+	font-family: 'Bebas Neue';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 60px;
+	line-height: 120%;
+	color: #292D33;
+	margin: 0;
+	margin-top: 1.875rem;
+	margin-bottom: 3rem;
+}
 .cards{
 	display: flex;
 	flex-wrap: wrap;
 }
 .card{
-	max-width: 480px;
+	flex-basis: 33%;
 	border: .0625rem solid #EBEBF0;
+	position: relative;
+	text-decoration: none;
+	transition: border 0.2s;
+}
+.card:hover{
+	border-color: #5C8EE6;
+}
+.card:hover .card-title{
+	color: #5C8EE6;
 }
 .card-img{
-	min-width: 100%;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 0;
 }
-
-
-
+.card-content{
+	padding: 2.5rem 3.125rem;
+}
+.card-title{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.75rem;
+	line-height: 160%;
+	color: #292D33;
+	margin-top: 0;
+	margin-bottom: .625rem;
+}
+.card-text{
+	font-size: 1rem;
+	line-height: 160%;
+	color: #828A99;
+	margin-bottom: 21.625rem;
+}
 
 @media all and (max-width: 2100px) {
 	.header-image{
@@ -415,7 +487,9 @@ body{
     .header-slider-buttons, .steps-buttons{
         display: flex;
     }
-    
+    .card{
+		flex-basis: 50%;
+	}
 }
 @media screen and (max-width: 1005px) {
     html{
@@ -573,6 +647,9 @@ body{
     .header-content {
         padding-top: 3rem;
     }
+	.card{
+		flex-basis: 100%;
+	}
 }
 
 @media screen and (max-width: 576px) {
