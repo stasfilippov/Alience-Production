@@ -409,12 +409,13 @@ body{
 	font-family: 'Bebas Neue';
 	font-style: normal;
 	font-weight: 600;
-	font-size: 60px;
+	font-size: 3.75rem;
 	line-height: 120%;
 	color: #292D33;
 }
 .labels-cards{
 	display: flex;
+    flex-wrap: wrap;
 }
 .labels-card{
 	flex-basis: 50%;
@@ -438,7 +439,7 @@ body{
 }
 .labels-card-title{
 	font-weight: 400;
-	font-size: 28px;
+	font-size: 1.75rem;
 	line-height: 160%;
 	color: #292D33;
 	margin: 0;
@@ -448,7 +449,7 @@ body{
 	color:#5C8EE5;
 }
 .labels-card-text{
-	font-size: 16px;
+	font-size: 1rem;
 	line-height: 160%;
 	color: #828A99;
 	max-width: 22.5rem;
@@ -537,7 +538,7 @@ body{
     .header-slider-buttons, .steps-buttons{
         display: flex;
     }
-    .card{
+    .production-card{
 		flex-basis: 50%;
 	}
 }
@@ -697,9 +698,12 @@ body{
     .header-content {
         padding-top: 3rem;
     }
-	.card{
+	.production-card{
 		flex-basis: 100%;
 	}
+    .labels-card{
+        flex-basis: 100%;
+    }
 }
 
 @media screen and (max-width: 576px) {
