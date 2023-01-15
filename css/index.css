@@ -309,7 +309,7 @@ body{
 	margin-bottom: 1.25rem;
     margin-top: 0.675rem;
 }
-.step-link{
+.button-link{
 	font-weight: 600;
 	font-size: 1rem;
 	line-height: 160%;
@@ -318,7 +318,7 @@ body{
 	align-items:center;
 	text-decoration: none;
 }
-.step-link::before{
+.button-link::before{
 	content:"";
 	height: .0625rem;
 	background: #5C8EE6;
@@ -326,7 +326,7 @@ body{
 	width: 2.5rem;
 	transition: width 0.2s;
 }
-.step-link:hover::before{
+.button-link:hover::before{
 	width: 3.75rem;
 }
 .steps-buttons{
@@ -405,6 +405,9 @@ body{
 }
 
 /* СТИЛИ section-labels */
+.section-labels{
+	margin-bottom: 9.375rem;
+}
 .section-labels-title{
 	font-family: 'Bebas Neue';
 	font-style: normal;
@@ -462,13 +465,103 @@ body{
     fill:#5C8EE5;
 }
 
+/* СТИЛИ section-founder */
+.founder{
+	position: relative;
+	min-height: 41.25rem;
+	margin-bottom: 9.375rem;
+}
+.founder-image{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+}
+.founder-content-wrapper{
+	display: flex;
+	justify-content: flex-end;
+}
+.founder-content{
+	max-width: 45rem;
+	padding: 3.125rem 0;
+}
+.founder-title{
+	font-family: 'Bebas Neue';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 3.75rem;
+	line-height: 120%;
+	color: #292D33;
+	max-width: 30rem;
+	margin: 0;
+	margin-top: 1.875rem;
+	margin-bottom: 1.25rem;
+}
+.founder-text{
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 160%;
+	color: #828A99;
+	margin-bottom: 1.875rem;
+}
 
 
+/* СТИЛИ section-clients */
+.clients{
+	margin-bottom: 9.375rem;
+}
+.clients-wrapper {
+	display: flex;
+	gap: 3.125rem;
+}
+.clients-content {
+	flex-basis: 50%;
+}
+.clients-title {
+	font-family: 'Bebas Neue';
+	font-weight: 400;
+	font-size: 3.75rem;
+	line-height: 120%;
+	color: #292D33;
+	margin: 0;
+	margin-top: 1.875rem;
+	margin-bottom: 2.5rem;
+}
+.clients-list {
+	list-style-type: none;
+	padding: 0;
+	columns: 2 auto;
+	margin: 0;
+}
+.clients-item{
+	display: flex;
+	align-items: center;
+	gap: 1.25rem;
+	font-size: 1rem;
+	line-height: 160%;
+	color: #292D33;
+	margin-bottom: 1.625rem;
+}
+.clients-item:last-child{
+	margin-bottom: 0;
+}
+.client-logo{
+	width: 70px;
+	height: 70px;
+}
 
-
-
-
-
+.clients-logo-list {
+	display: flex;
+	flex-wrap: wrap;
+	flex-shrink: 10;
+}
+.client-logo-item {
+	flex-basis: 33%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #EBEBF0;
+}
 
 
 
