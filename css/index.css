@@ -249,7 +249,6 @@ body{
 
 .section-steps {
 	margin-top: 150px;
-	margin-bottom: 60px;
 }
 .section-steps-title {
 	font-family: 'Bebas Neue';
@@ -266,7 +265,6 @@ body{
 	padding: 0;
 	gap: 30px;
     margin: 0;
-    margin-bottom: 20px;
 }
 .step-item {
 	max-width: 330px;
@@ -311,7 +309,7 @@ body{
 }
 .button-link{
 	font-weight: 600;
-	font-size: 1rem;
+	font-size: 1.2rem;
 	line-height: 160%;
 	color: #5C8EE6;
 	display: flex;
@@ -322,8 +320,8 @@ body{
 	content:"";
 	height: .0625rem;
 	background: #5C8EE6;
-	margin-right: 1.25rem;
-	width: 2.5rem;
+	margin-right: 1.7rem;
+	width: 3rem;
 	transition: width 0.2s;
 }
 .button-link:hover::before{
@@ -357,8 +355,9 @@ body{
 	line-height: 120%;
 	color: #292D33;
 	margin: 0;
-	margin-top: 1.875rem;
-	margin-bottom: 3rem;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+    letter-spacing: -0.05rem;
 }
 .production-cards{
 	display: flex;
@@ -391,7 +390,7 @@ body{
 .production-card-title{
 	font-style: normal;
 	font-weight: 400;
-	font-size: 1.75rem;
+	font-size: 1.7rem;
 	line-height: 160%;
 	color: #292D33;
 	margin-top: 0;
@@ -412,9 +411,12 @@ body{
 	font-family: 'Bebas Neue';
 	font-style: normal;
 	font-weight: 600;
-	font-size: 3.75rem;
+	font-size: 2.9rem;
 	line-height: 120%;
 	color: #292D33;
+    margin: 0;
+    margin-top: 1.5rem;
+    margin-bottom: 2.8rem;
 }
 .labels-cards{
 	display: flex;
@@ -807,7 +809,7 @@ body{
 }
 @media screen and (max-width: 576px) {
     .container {
-        max-width: 90%;
+        max-width: 92%;
     }
     .header-title {
         font-size: 4rem;
@@ -882,12 +884,12 @@ body{
 	}
 	.section-steps-title{
 		font-size: 3rem;
-		margin-top: 1.8rem;
-		margin-bottom: 2.5rem;
+		margin-top: 1.5rem;
+		margin-bottom: 2.2rem;
 	}
 	.step-numb{
 		font-size: 4rem;
-		margin-bottom: 0.6rem;
+		margin-bottom: 1rem;
 	}
 	.step-text{
 		margin: 0;
@@ -908,15 +910,16 @@ body{
 		width: 3.2rem;
 		margin-right: 1.5rem;
 	}
-	.steps-list {
-		margin-bottom: 18px;
-	}
+	
 	.steps-buttons {
 		height: 41px;
 	}
 	.production {
-		margin: 8.325rem 0;
+		margin: 8.1rem 0;
 	}
+    .production-card{
+        min-height: 429px;
+    }
 	.section-production-title{
 		font-size: 3rem;
 	}
@@ -924,14 +927,11 @@ body{
 		margin-bottom: 2.7rem;
 	}
 	.production-card-content {
-		padding: 1.2rem 2.125rem;
-	}
-	.production-card-title{
-		margin-bottom: 0.2rem;
+		padding: 1.2rem 2.4rem;
 	}
 	.production-card-text {
 		margin: 0;
-		margin-bottom: 24rem;
+		margin-bottom: 0;
 		font-size: 1.2rem;
 	}
 	
