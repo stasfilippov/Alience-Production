@@ -503,6 +503,7 @@ body{
 	font-size: 1rem;
 	line-height: 160%;
 	color: #828A99;
+	margin: 0;
 	margin-bottom: 1.875rem;
 }
 
@@ -894,6 +895,9 @@ body{
 	.section-steps {
 		margin-top: 100px;
 	}
+	.section-labels {
+		margin-bottom: 8.375rem;
+	}
 	.seporator {
 		width: 8rem;
 	}
@@ -973,6 +977,9 @@ body{
 		position: relative;
 		min-height: 61.0625rem;
 	}
+	.founder-content {
+		padding: 3.7rem 0;
+	}
 	.founder-image{
 		top:0;
 		left: 0;
@@ -980,5 +987,16 @@ body{
 	}
 	.founder-content-wrapper{
 		flex-direction: column;
+	}
+	.founder-title {
+		font-size: 3rem;
+		margin-bottom: 0.5rem;
+	}
+	.founder-text{
+		font-size: 1.17rem;
+		margin-bottom: 0.5rem;
+	}
+	.founder-content .button-link {
+		margin-top: 1.5rem;
 	}
 }
