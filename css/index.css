@@ -536,12 +536,12 @@ body{
 .clients-title {
 	font-family: 'Bebas Neue';
 	font-weight: 600;
-	font-size: 3.75rem;
+	font-size: 3.8rem;
 	line-height: 120%;
 	color: #292D33;
 	margin: 0;
-	margin-top: 1.875rem;
-	margin-bottom: 2.5rem;
+	margin-top: 1.6rem;
+	margin-bottom: 2.8rem;
 }
 .clients-list {
 	list-style-type: none;
