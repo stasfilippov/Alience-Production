@@ -456,7 +456,6 @@ body{
 	margin: 0;
 }
 .labels-card-text{
-	grid-area: text;
 	font-weight: 400;
 	font-size: 1rem;
 	line-height: 160%;
@@ -467,6 +466,7 @@ body{
 .labels-card-text-w{
     max-width: 22.5rem;
     margin-right: 1.875rem;
+    grid-area: text;
 }
 .labels-card:hover{
 	border-color: #5C8EE6;
@@ -896,7 +896,7 @@ body{
 		font-size: 1.15rem;
 	}
 	.header-title {
-		margin-bottom: 1rem;
+		margin-bottom: 1.4rem;
 	}
 	.header-text {
 		margin-top: 0;
@@ -907,7 +907,7 @@ body{
 		font-size: 1.3rem;
 	}
 	.header-content {
-		margin-bottom: 4rem;
+		margin-bottom: 4.4rem;
 	}
 	.header-features{
 		min-height: 11.5rem;
@@ -927,7 +927,7 @@ body{
 		margin-top: 100px;
 	}
 	.section-labels {
-		margin-bottom: 8.375rem;
+		margin-bottom: 8.3rem;
 	}
 	.seporator {
 		width: 8rem;
@@ -976,6 +976,11 @@ body{
 	.section-production-title {
 		margin-bottom: 2.7rem;
 	}
+    .section-labels-title{
+        font-size: 3rem;
+        margin-bottom: 2.6rem;
+        margin-top: 1.5rem;
+    }
 	.production-card-content {
 		padding: 1.2rem 2.4rem;
 	}
@@ -985,10 +990,12 @@ body{
 		font-size: 1.2rem;
 	}
 	.labels-card{
-		grid-template-columns: 100px 1fr;
-		grid-template-rows: auto 2fr;
-		padding: 2.4rem;
-		grid-column-gap: 2.3rem;
+		grid-template-columns: 100px auto;
+        grid-template-areas: 
+        "logo title"
+        "text text";
+        padding: 2.5rem;
+        grid-column-gap: 2.45rem;
 	}
 	.labels-card-image{
 		grid-area: logo;
@@ -1004,12 +1011,18 @@ body{
 		font-size: 1.15rem;
 		margin-top: 1.6rem;
 	}
+    .labels-card-text-w{
+        max-width: none;
+        margin-right: 0;
+        grid-area: text;
+    }
 	.founder{
 		position: relative;
 		min-height: 61.0625rem;
+        margin-bottom: 4.5rem;
 	}
 	.founder-content {
-		padding: 3.7rem 0;
+		padding: 3.8rem 0;
 	}
 	.founder-image{
 		top:0;
@@ -1021,7 +1034,7 @@ body{
 	}
 	.founder-title {
 		font-size: 3rem;
-		margin-bottom: 0.5rem;
+		margin-bottom: 1rem;
 	}
 	.founder-text{
 		font-size: 1.17rem;
@@ -1030,6 +1043,16 @@ body{
 	.founder-content .button-link {
 		margin-top: 1.5rem;
 	}
+    .founder-title + .founder-text {
+        margin-bottom: 0.2rem;
+    }
+    .founder-content .button-link::before {
+        width: 3rem;
+        margin-right: 2rem;
+    }
+    .founder-content .button-link {
+        font-size: 1.2rem;
+    }
     .client-logo-item{
         flex-basis: 50%;
         padding: 2.4rem 3.8125rem;
@@ -1046,9 +1069,9 @@ body{
         column-gap: 0
     }
     .clients-title{
-        font-size: 2.85rem;
-        margin-bottom: 3rem;
-        margin-top: 1.7rem;
+        font-size: 3rem;
+        margin-bottom: 2.6rem;
+        margin-top: 1.4rem;
     }
     .clients-item{
         font-size: 1.17rem;
