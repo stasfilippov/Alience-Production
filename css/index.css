@@ -565,6 +565,10 @@ body{
 .client-logo{
 	width: 70px;
 	height: 70px;
+    filter: grayscale(100%);
+}
+.client-logo:hover{
+    filter: grayscale(0);
 }
 
 .clients-logo-list {
