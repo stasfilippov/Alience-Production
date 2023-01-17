@@ -566,9 +566,11 @@ body{
 	width: 70px;
 	height: 70px;
     filter: grayscale(100%);
+    transition: filter 0.2s;
 }
 .client-logo:hover{
     filter: grayscale(0);
+    cursor: pointer;
 }
 
 .clients-logo-list {
