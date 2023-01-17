@@ -695,7 +695,7 @@ body{
         display: flex;
         justify-content: space-between;
         flex-direction: column;
-        padding: 2.3rem 2.5rem;
+        padding: 2.2rem 2.4rem;
         border-right: 1px solid rgba(235, 235, 240, 0.2);
     }
     .mobile-menu-line{
@@ -869,7 +869,33 @@ body{
 		"logo title"
 		"text text";
 	}
-
+    .labels-card-text-w{
+        max-width: none;
+    }
+    .client-logo-item{
+        flex-basis: 50%;
+        padding: 2.4rem 3.8125rem;
+    }
+    .clients-logo-list{
+        padding-top: 2.5rem;
+    }
+    .client-logo{
+        width: 50px;
+        height: 50px;
+    }
+    .clients-list {
+        columns: 1;
+        column-gap: 0
+    }
+    .clients-title{
+        font-size: 3rem;
+        margin-bottom: 2.6rem;
+        margin-top: 1.4rem;
+    }
+    .clients-item{
+        font-size: 1.17rem;
+        margin-bottom: 1.25rem;
+    }
 }
 @media screen and (max-width: 376px) {
 	.step-item {
