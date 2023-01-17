@@ -67,13 +67,13 @@ body{
 .header-logo {
     display: flex;
     align-items: center;
-    padding: 0 3.25rem;
+    padding: 0 3.1rem;
     border-right: 1px solid rgba(235, 235, 240, 0.2);
     height: 100%;
 }
 .logo-svg {
-    width: 15.75rem; 
-    height: 37px;
+    width: 8.75rem; 
+    height: 2.75rem;
 }
 .header-nav {
     display: flex;
@@ -85,7 +85,7 @@ body{
     margin: 0;
 }
 .header-nav-item {
-    margin-right: 2.9rem;
+    margin-right: 3.2rem;
 	height: 100%;
 	display: flex;
 	align-items: center;
@@ -175,7 +175,7 @@ body{
     position: relative;
     z-index: 1;
     color: #fff;
-    margin-bottom: 6rem;
+    margin-bottom: 6.2rem;
 }
 .header-title{
     max-width: 67.5rem;
@@ -348,7 +348,8 @@ body{
 
 /* СТИЛИ section-production */
 .production {
-	margin: 6.325rem 0;
+	margin-top: 7.9rem;
+    margin-bottom: 9.15rem;
 }
 .section-production-title{
 	font-family: 'Bebas Neue';
@@ -359,15 +360,15 @@ body{
 	color: #292D33;
 	margin: 0;
 	margin-top: 1.5rem;
-	margin-bottom: 1.5rem;
-    letter-spacing: -0.05rem;
+	margin-bottom: 3.5rem;
+    letter-spacing: 0.02rem;
 }
 .production-cards{
 	display: flex;
 	flex-wrap: wrap;
 }
 .production-card{
-	flex-basis: 33%;
+	flex-basis: 33.3%;
 	border: .0625rem solid #EBEBF0;
 	position: relative;
 	text-decoration: none;
@@ -395,6 +396,7 @@ body{
 	font-weight: 400;
 	font-size: 1.7rem;
 	line-height: 160%;
+    letter-spacing: 0.02rem;
 	color: #292D33;
 	margin-top: 0;
 	margin-bottom: .625rem;
@@ -403,7 +405,8 @@ body{
 	font-size: 1rem;
 	line-height: 160%;
 	color: #828A99;
-	margin-bottom: 21.625rem;
+    margin: 0;
+	margin-bottom: 22.3rem;
 }
 
 /* СТИЛИ section-labels */
@@ -414,16 +417,15 @@ body{
 	font-family: 'Bebas Neue';
 	font-style: normal;
 	font-weight: 600;
-	font-size: 2.9rem;
+	font-size: 3.4rem;
 	line-height: 120%;
 	color: #292D33;
     margin: 0;
     margin-top: 1.8rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 3.6rem;
 }
 .labels-cards{
 	display: flex;
-	flex-basis: 50%;
 }
 .labels-card{
 	display: grid;
@@ -437,10 +439,12 @@ body{
 	cursor: pointer;
 	transition: hover 0.2s;
 	padding: 3.125rem;
+    min-height: 17.5rem;
 }
 .labels-card-image{
 	grid-area: logo;
 	width: 100%;
+    height: 100%;
 	fill:#828A99;
 }
 .labels-card-title{
@@ -459,6 +463,10 @@ body{
 	color: #828A99;
 	margin: 0;
 	margin-top: 0.625rem;
+}
+.labels-card-text-w{
+    max-width: 22.5rem;
+    margin-right: 1.875rem;
 }
 .labels-card:hover{
 	border-color: #5C8EE6;
@@ -479,7 +487,7 @@ body{
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 40%;
+	width: 44%;
 }
 .founder-content-wrapper{
 	display: flex;
@@ -498,9 +506,13 @@ body{
 	color: #292D33;
 	max-width: 30rem;
 	margin: 0;
-	margin-top: 1.875rem;
-	margin-bottom: 1.25rem;
+	margin-top: 1.6rem;
+	margin-bottom: 1.7rem;
 }
+.founder-title + .founder-text {
+    margin-bottom: 1.4rem;
+}
+
 .founder-text{
 	font-weight: 400;
 	font-size: 1rem;
@@ -584,6 +596,22 @@ body{
         font-size: 15px;
     };
     
+}
+@media all and (max-width:1921px) {
+    .step-item-w .button-link{
+        font-size: 1rem;
+    }
+    .step-item-w .button-link::before{
+        width: 2.5rem;
+        margin-right: 1.3rem;
+    }
+    .founder-content .button-link{
+        font-size: 1rem;
+    }
+    .founder-content .button-link::before{
+        width: 2.5rem;
+        margin-right: 1.3rem;
+    }
 }
 @media all and (max-width: 1725px) {
     html{
