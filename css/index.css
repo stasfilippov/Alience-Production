@@ -520,7 +520,7 @@ body{
 }
 .clients-title {
 	font-family: 'Bebas Neue';
-	font-weight: 400;
+	font-weight: 600;
 	font-size: 3.75rem;
 	line-height: 120%;
 	color: #292D33;
@@ -999,4 +999,28 @@ body{
 	.founder-content .button-link {
 		margin-top: 1.5rem;
 	}
+    .client-logo-item{
+        flex-basis: 50%;
+        padding: 2.4rem 3.8125rem;
+    }
+    .clients-logo-list{
+        padding-top: 2.5rem;
+    }
+    .client-logo{
+        width: 50px;
+        height: 50px;
+    }
+    .clients-list {
+        columns: 1;
+        column-gap: 0
+    }
+    .clients-title{
+        font-size: 2.85rem;
+        margin-bottom: 3rem;
+        margin-top: 1.7rem;
+    }
+    .clients-item{
+        font-size: 1.17rem;
+        margin-bottom: 1.25rem;
+    }
 }
