@@ -823,6 +823,12 @@ body{
     .header-logo{
         padding: 0 1.5625rem;
     }
+    /* .cta-img {
+        width: 40%;
+    } */
+    .cta-form{
+        flex-basis: 50%;
+    }
 }
 @media all and (max-width: 1280px) {
     .header-phone {
@@ -879,6 +885,17 @@ body{
         padding: 1.5rem 2rem;
     }
 }
+@media screen and (max-width: 1130px) {
+    .cta-img{
+        display: none;
+    }
+    .cta-form-wrapper {
+        justify-content: flex-start;
+    }
+    .cta-form {
+        flex-basis: 100%;
+    }
+}
 @media screen and (max-width: 1005px) {
     html{
         font-size: 12px;
@@ -921,9 +938,6 @@ body{
     .header-button-text{
         display: none;
     }
-/*     .header-button{
-        padding: 1.875rem;
-    } */
     .mobile-menu-nav{
         padding: 0;
     }
@@ -1102,6 +1116,10 @@ body{
     .clients-item{
         font-size: 1.17rem;
         margin-bottom: 1.25rem;
+    }
+    .cta-form-footer{
+        flex-direction: column;
+        align-items: stretch;
     }
 }
 @media screen and (max-width: 376px) {
@@ -1319,5 +1337,36 @@ body{
     }
     .blog-card {
         padding: 0.9rem 1.5rem;
+    }
+    .section-cta {
+        margin-top: 8.375rem;
+        padding-top: 3.8rem;
+    }
+    .input-group-wrapper{
+        flex-direction: column;
+    }
+    .cta-form-title {
+        font-weight: 600;
+        font-size: 3rem;
+        margin-bottom: 1.2rem;
+    }
+    .cta-form-text {
+        font-size: 1.15rem;
+        margin-bottom: 2.3rem
+    }
+    .input-group {
+        position: relative;
+        height: 5.1rem;
+    }
+    .cta-form-footer {
+        margin-top: 0.875rem;
+        gap: 2.3rem;
+    }
+    .cta-form-footer .btn {
+        font-size: 1.28rem;
+        padding: 1.6rem 3.5rem;
+    }
+    .notify-text {
+        font-size: 1rem;
     }
 }
