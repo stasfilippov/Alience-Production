@@ -164,12 +164,11 @@ body{
     background-color: #3A71D1;
     border: none;
     cursor: pointer;
-}
+} 
 .container{
     max-width: 90rem;
     margin: 0 auto;   
 }
-
 .header-content{
     padding-top: 9.375rem;
     position: relative;
@@ -641,6 +640,130 @@ body{
     margin: 0;
     font-size: 1rem;
     line-height: 160%;
+}
+.bg-gray{
+    background: #F0F2F5;
+}
+.section-cta{
+    position: relative;
+    padding-top: 5.8rem;
+    margin-top: 14.375rem;
+    padding-bottom: 6.25rem;
+}
+.cta-img{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    max-width: 45rem;
+    width: 50%;
+}
+.cta-form-wrapper{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cta-form-title {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.75rem;
+    line-height: 120%;
+    color: #292D33;
+    margin: 0;
+    margin-bottom: 1.7rem;
+}
+.cta-form-text {
+    max-width: 40rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 160%;
+    color: #828A99;
+    margin: 0;
+    margin-bottom: 3.1rem;
+}
+.cta-form{
+    max-width: 52.5rem;
+    flex-basis: 60%;
+}
+.input-group-wrapper{
+    display: flex;
+    gap: 1.875rem;
+}
+.input-group {
+    position: relative;
+    height: 4.125rem;
+    flex-grow: 1;
+    background: #F0F2F5;
+}
+.input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding: 1.25rem 1.875rem;
+    border: 1px solid #E4E4EB;
+    background-color: transparent;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 160%;
+    color: #292D33;
+}
+.input:focus{
+    border: 1px solid #5C8EE6;
+    outline: 0;
+}
+.input-group-label{
+    position: absolute;
+    cursor: text;
+    top: 1.2rem;
+    left: 1.95rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 160%;
+    color: #828A99;
+    transition: top 0.2s, left 0.2s, font-size 0.2s;
+}
+.input:focus ~  .input-group-label, .input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
+    top: -0.5rem;
+    left: 1.25rem;
+    font-size: .625rem;
+    background-color: inherit;
+    padding: 0 .625rem;
+}
+.cta-form-footer{
+    display: flex;
+    margin-top: 1.875rem;
+    gap: 1.875rem;
+    align-items: center;
+    
+}
+.cta-form-button{
+    flex-shrink: 0;
+}
+.notify{
+    display: flex;
+    align-items: flex-start;
+    gap: .625rem;
+}
+.notify-icon{
+    flex-shrink: 0;
+}
+.notify-text{
+    margin: 0;
+    max-width: 23.6875rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: .75rem;
+    line-height: 160%;
+    color: #828A99;
+}
+.cta-form-footer .btn{
+    font-size: .875rem;
+    padding: 1.25rem 3.5rem;
 }
 
 @media all and (max-width: 2100px) {
