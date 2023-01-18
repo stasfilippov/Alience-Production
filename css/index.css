@@ -240,7 +240,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-.header-buttons-prev, .header-buttons-next {
+.header-button-prev, .header-button-next {
     height: 100%;
     flex-basis: 50%;
     display: flex;
@@ -266,7 +266,6 @@ body{
 	display: flex;
 	list-style: none;
 	padding: 0;
-	gap: 30px;
     margin: 0;
 }
 .step-item {
@@ -330,21 +329,23 @@ body{
 .button-link:hover::before{
 	width: 3.75rem;
 }
-.steps-buttons{
-	display: none;
-	justify-content: flex-end;
-	height: 44px;
+.primary-buttons-wrapper{
+    display: flex;
+    justify-content: flex-end;
+	height: 60px;
 }
-.steps-buttons-prev, .steps-buttons-next {
+.primary-button-prev, .primary-button-next {
 	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	cursor: pointer;
 	background: #5C8EE6;
-	padding: 13px 17px;
+	width: 80px;
 }
-
+.steps-buttons{
+	display: none;
+}
 
 /* СТИЛИ section-production */
 .production {
@@ -590,7 +591,57 @@ body{
 }
 
 
-
+/* СТИЛИ section-blog */
+.blog-card{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 25rem;
+    padding: 3.125rem;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.blog-slider-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.875rem;
+}
+.blog-card-img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+.blog-card::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    z-index: -1;
+    background: rgba(41, 45, 51, 0.6);
+}
+.blog-card-title{
+    margin: 0;
+    font-size: 1.75rem;
+    line-height: 160%;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: .625rem;
+}
+.blog-card-text{
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+    font-size: 1rem;
+    line-height: 160%;
+}
 
 @media all and (max-width: 2100px) {
 	.header-image{
@@ -617,6 +668,11 @@ body{
     .founder-content .button-link::before{
         width: 2.5rem;
         margin-right: 1.3rem;
+    }
+}
+@media all and (max-width:1845px) {
+    .client-logo-item{
+        padding: 2.7rem 4.2rem;
     }
 }
 @media all and (max-width: 1725px) {
@@ -671,8 +727,14 @@ body{
     .navbar{
         height: 5rem;
     }
-    .header-slider-buttons, .steps-buttons{
+    .header-slider-buttons{
         display: flex;
+    }
+    .primary-button-prev, .primary-button-next {
+        width: 60px;
+    }
+    .primary-buttons-wrapper{
+        height: 40px ; 
     }
     .production-card{
 		flex-basis: 50%;
@@ -680,6 +742,19 @@ body{
 	.founder-content{
 		max-width: 35rem;
 	}
+    .clients-content {
+        flex-basis: 55%;
+    }
+    .clients-logo-list {
+        flex-basis: 45%;
+    }
+    .client-logo {
+        width: 50px;
+        height: 50px;
+    }
+    .client-logo-item {
+        padding: 1.5rem 2rem;
+    }
 }
 @media screen and (max-width: 1005px) {
     html{
@@ -815,6 +890,9 @@ body{
     .close-menu .mobile-menu-line:nth-child(3) {
         transform: rotate(-45deg) translateY(-9px);
     }
+    .steps-buttons{
+        display: flex;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -908,9 +986,6 @@ body{
 		max-width: 300px;
 		height: 100%;
 	}
-    .steps-list{
-        gap: 0;
-    }
 	.navbar{
 		height: 5.75rem;
 	}
@@ -967,7 +1042,7 @@ body{
 	.section-steps-title{
 		font-size: 3rem;
 		margin-top: 1.5rem;
-		margin-bottom: 2.2rem;
+		margin-bottom: 2.7rem;
 	}
 	.step-numb{
 		font-size: 4rem;
@@ -993,7 +1068,7 @@ body{
 		margin-right: 1.5rem;
 	}
 	
-	.steps-buttons {
+	.primary-buttons-wrapper {
 		height: 41px;
 	}
 	.production {
@@ -1108,5 +1183,18 @@ body{
     .clients-item{
         font-size: 1.17rem;
         margin-bottom: 1.25rem;
+    }
+    .blog-card-title{
+        font-size: 1.7rem;
+        line-height: 115%;
+    }
+    .blog-card-text{
+        display: none;
+    }
+    .blog-card{
+        min-height: 16rem;
+    }
+    .blog-card {
+        padding: 0.9rem 1.5rem;
     }
 }
