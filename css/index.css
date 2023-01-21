@@ -773,7 +773,7 @@ body{
 /* СТИЛИ footer */
 .footer-bottom{
     padding-top: 3.125rem;
-    padding-bottom: 3.125rem;
+    padding-bottom: 2.8rem;
     display: flex;
 }
 .footer-seporator{
@@ -784,7 +784,6 @@ body{
     padding-bottom: 3.125rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 .footer-info{
     display: flex;
@@ -792,10 +791,17 @@ body{
     font-style: normal;
     text-decoration: none;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 160%;
     color: #292D33;
-    gap: .625rem;
+    gap: 1rem;
+	margin-right: 3.4rem;
+}
+.footer-social{
+	display: flex;
+	align-items: center;
+	gap: 1.3rem;
+    margin-left: 1.2rem;
 }
 .footer-info-address, .footer-info-email{
     font-style:inherit;
@@ -813,7 +819,7 @@ body{
     font-size: 2rem;
     line-height: 160%;
     color: #292D33;
-    margin-right: 5.125rem;
+    margin-right: 5.5rem;
 }
 .footer-social-link{
     text-decoration: none;
@@ -823,10 +829,10 @@ body{
     opacity: 0.5;
 }
 .footer-menu-bottom-1{
-    margin-right: 8.1875rem;
+    margin-right: 7rem;
 }
 .footer-menu-bottom-2{
-    margin-right: 12.125rem;
+    margin-right: 10.5rem;
 }
 .footer-menu-title {
     font-style: normal;
@@ -872,7 +878,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.25rem 0;
+    padding: 0.4rem 0;
 }
 .footer-legal{
     display: flex;
@@ -882,7 +888,7 @@ body{
     font-size: .75rem;
     line-height: 160%;
     color: #828A99; 
-    gap: 4.375rem;
+    gap: 5.1rem;
 }
 .footer-policy{
     color: inherit;
