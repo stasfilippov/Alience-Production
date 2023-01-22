@@ -935,6 +935,9 @@ body{
     .client-logo-item{
         padding: 2.7rem 4.2rem;
     }
+	.logo-footer {
+		margin-right: 8rem;
+	}
 }
 @media all and (max-width: 1725px) {
     html{
@@ -1022,6 +1025,21 @@ body{
     .client-logo-item {
         padding: 1.5rem 2rem;
     }
+	.footer-phone {
+		font-size: 1.5rem;
+	}
+	.logo-footer {
+		margin-right: 3rem;
+	}
+	.footer-phone {
+		margin-right: 1.5rem;
+	}
+	.footer-info {
+		margin-right: 1.4rem;
+	}
+	.logo-footer {
+		width: 7.5rem;
+	}
 }
 @media screen and (max-width: 1130px) {
     .cta-img{
@@ -1186,6 +1204,17 @@ body{
 	}
 	.clients-wrapper{
 		flex-direction: column;
+	}
+	.logo-footer {
+		width: 6.5rem;
+		margin-right: 1.2rem;
+	}
+	.footer-phone {
+		margin-right: 1rem;
+		font-size: 1.2rem;
+	}
+	.footer-info{
+		font-size: 0.9rem;
 	}
 }
 
