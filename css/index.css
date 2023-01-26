@@ -921,6 +921,8 @@ body{
     background-color: rgba(41, 45, 51, 0.5);
     z-index: 5;
     display: flex;
+    align-items: center;
+    justify-content: center;
     transition: opacity 0.2s;
 }
 .modal.is-open {
@@ -934,9 +936,9 @@ body{
 }
 .modal-dialog {
     background-color: #fff;
-    margin: auto;
     max-width: 28.75rem;
-    padding: 2.5rem 3.125rem;
+    height: 39.1875rem;
+    padding: 2.2rem 3.125rem;
     position: relative;
     transform: translateY(-20%);
     opacity: 0;
@@ -958,11 +960,12 @@ body{
     margin: 0;
     font-family: 'Bebas Neue';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 3rem;
     line-height: 120%;
     color: #292D33;
-    margin-bottom: 1.25rem;
+    margin-top: 0.1rem;
+    margin-bottom: 1.7rem;
 }
 .modal-text {
     font-style: normal;
@@ -991,6 +994,7 @@ body{
     display: block;
     width: 100%;
     margin-bottom: 1.5rem;
+    padding: 1.1rem 4.0625rem;
 }
 
 
@@ -1163,7 +1167,7 @@ body{
         display: flex;
         justify-content: space-between;
         flex-direction: column;
-        padding: 2.2rem 2.4rem;
+        padding: 1.8rem 2.4rem;
         border-right: 1px solid rgba(235, 235, 240, 0.2);
     }
     .mobile-menu-line{
@@ -1177,6 +1181,9 @@ body{
     }
     .navbar-light .mobile-menu-line{
         background-color:black;
+    }
+    .header-button {
+        min-width: 85px;
     }
     .header-button-icon{
         fill:white;
@@ -1415,6 +1422,9 @@ body{
     }
 }
 @media screen and (max-width: 376px) {
+    .mobile-menu-toggle {
+        padding: 2.2rem 2.4rem;
+    }
 	.step-item {
 		max-width: 300px;
 		height: 100%;
