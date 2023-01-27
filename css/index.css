@@ -175,7 +175,7 @@ body{
 } 
 .container{
     max-width: 90rem;
-    margin: 0 auto;   
+    margin: 0 auto; 
 }
 .header-content{
     padding-top: 9.375rem;
@@ -239,7 +239,7 @@ body{
     font-weight: 400;
     font-size: 1rem;
     line-height: 160%;
-    color: #fff;
+    color: inherit;
 }
 .header-slider-buttons{
     display: none;
@@ -1009,16 +1009,30 @@ body{
     padding: 1.1rem 4.0625rem;
 }
 
-/* СТИЛИ для about-header */
-
-.header-about {
+/* СТИЛИ для header-inner-page */
+.header-inner-page-wrapper{
+    position: relative;
+}
+.header-inner-page {
     position: relative;
     background-color: #F0F2F5;
+    display: none;
 }
-.header-about-content {
-    padding: 3.125rem 0;
+.header-inner-page-i {
+    position: relative;
+    background-color: #F0F2F5;
+    display: none;
 }
-.header-about-title {
+.header-inner-page-bg {
+    position: relative;
+    display: block;
+}
+.header-inner-page-content {
+    position: relative;
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+}
+.header-inner-page-title {
     font-family: 'Bebas Neue';
     font-style: normal;
     font-weight: 600;
@@ -1028,6 +1042,7 @@ body{
     margin-top: 1.875rem;
     margin-bottom: 1.25rem;
 }
+
 .breadcrambs {
     list-style: none;
     display: flex;
@@ -1043,15 +1058,20 @@ body{
     align-items: center;
     justify-content: center;
 }
+.header-inner-page-image{
+    position: absolute;
+    bottom:0;
+    right: 0;
+    max-width: 30rem;
+}
 .breadcrambs-link {
     text-decoration: none;
     color: inherit;
-    
 }
 .breadcrambs-item:not(:last-child)::after {
     content:"";
-	height: .0625rem;
-	background: #828A99;
+    height: .0625rem;
+    background: #828A99;
     width: .875rem;
     display: flex;
     margin-right: .625rem;
@@ -1059,9 +1079,55 @@ body{
 }
 .breadcrambs-item:last-child{
     font-weight: 400;
-    font-size: 14px;
+    font-size: .875rem;
     line-height: 160%;
     color: #292D33;
+}
+.light{
+    color: #FFFFFF;
+}
+.black {
+    color: black;
+}
+.light:not(:last-child)::after {
+    background: #FFFFFF;
+}
+.light:last-child{
+    color: #FFFFFF;
+}
+.bg-inner-page{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+.header-inner-page-wrapper::after{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    z-index: -1;
+    background: rgba(41, 45, 51, 0.6);
+}
+
+.slider-inner-page .haeder-features-items, 
+.slider-inner-page .header-button-prev, 
+.slider-inner-page .header-button-next {
+    border: 1px solid #EBEBF0;
+}
+.arrow-next, .arrow-prev {
+    fill: inherit;
+}
+.white-arrows {
+    fill:#FFFFFF;
+}
+.black-arrows {
+    fill: #292D33;
 }
 
 @media all and (max-width: 2100px) {
@@ -1433,7 +1499,9 @@ body{
         margin-right: 0;
         margin-bottom: 1.875rem;
     }
-
+    .header-inner-page-image {
+        display: none;
+    }
 }
 @media screen and (max-width: 576px) {
     .container {
