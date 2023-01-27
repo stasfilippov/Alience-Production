@@ -3,17 +3,17 @@ const logoLight = document.querySelector(".logo-light");
 const logoBlack = document.querySelector(".logo-black");
 const mMenuToggle = document.querySelector(".mobile-menu-toggle");
 const menu = document.querySelector(".mobile-menu");
+const isFront = document.body.classList.contains("front-page")
 
 const lightModeOn = (event) => {
 	navbar.classList.add("navbar-light");
-	logoBlack.style.display = "block";
-	logoLight.style.display = "none";
 };
 
 const lightModeOff = (event) => {
 	navbar.classList.remove("navbar-light");
-	logoBlack.style.display = "none";
-	logoLight.style.display = "block";
+};
+const changeNavHeight = (height) => {
+	navbar.style.height = height;
 };
 
 const openMenu = (event) => {
@@ -30,7 +30,10 @@ const closeMenu = (event) => {
 };
 
 window.addEventListener('scroll', () => {
-	this.scrollY > 1 ? lightModeOn() : lightModeOff();
+	this.scrollY > 1 ? changeNavHeight("4.625rem") : changeNavHeight("6rem");
+	if (isFront) {
+		this.scrollY > 1 ? lightModeOn() : lightModeOff();
+	}
 });
 mMenuToggle.addEventListener("click", (event) => {
 	event.preventDefault();
@@ -127,26 +130,3 @@ document.addEventListener("keyup", (event) => {
 	}
 });
 
-/* const modalToggle = document.querySelectorAll("[data-toggle=modal]");
-const modalClose = document.querySelector(".modal-close");
-
-modalToggle.forEach((element) => {
-	element.addEventListener("click", (event) => {
-		event.preventDefault();
-		modal.classList.add("is-open");
-	});
-});
-modalClose.addEventListener("click", (event) => {
-	event.preventDefault();
-	modal.classList.remove("is-open");
-});
-modal.addEventListener("click", (e) => {
-	if (e.target === modal) {
-		modal.classList.remove("is-open");
-	}
-});
-document.addEventListener('keydown', (e) => {
-	if (e.code === "Escape" && modal.classList.remove("is-open")) {
-		closeModal(); 
-	}
-}); */
