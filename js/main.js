@@ -130,3 +130,31 @@ document.addEventListener("keyup", (event) => {
 	}
 });
 
+const forms = document.querySelectorAll("form");
+array.forEach((form) => {
+	const validation = new JustValidate(form, {
+		errorFieldCssClass: 'is-invalid',
+	})
+	.validation
+		.addField("[name=username]", [
+			{
+				rule: 'minLength',
+				value: 3,
+			},
+			{
+				rule: 'maxLength',
+				value: 30,
+			},
+		])
+		.addField("[name=userphone]", [
+			{
+				rule: 'required',
+				errorMessage: 'Field is required',
+			},
+			{
+				rule: 'email',
+				errorMessage: 'Email is invalid!',
+			},
+		])
+
+});
