@@ -2,7 +2,7 @@
 		<div class="bg-gray section-cta">
 			<img src="/image/cta.png" alt="cta" class="cta-img">
 			<div class="cta-form-wrapper container">
-				<form action="./handler.php" method="POST" class="cta-form">
+				<form action="handler.php" method="POST" class="cta-form">
 					<h2 class="cta-form-title">Хотите сотрудничать?</h2>
 					<p class="cta-form-text">Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!</p>
 					<div class="input-group-wrapper">
@@ -23,10 +23,11 @@
 								id="user-phone" 
 								type="tel"
                                 name="userphone" 
-								class="input"
+								class="input tel"
 								placeholder=" "
                                 maxlength="30"
-                                required>
+                                required
+								>
 							<label class="input-group-label" for="user-phone">Номер телефона</label>
 						</div>
 					</div>
@@ -177,7 +178,7 @@
 				</svg> 
 			</a>
 			<p class="modal-text">Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!</p>
-			<form action="./handler.php" method="POST" class="modal-form">
+			<form action="handler.php" method="POST" class="modal-form">
 				<div class="input-group-wrapper input-group-vertical">
 					<div class="input-group modal-input-group">
 						<input 
@@ -216,7 +217,24 @@
 			</form>
 		</div>
 	</div>
+	<div class="modal">
+		<div class="modal-dialog modal-success">
+			<img class="bg-image-modal" src="./image/thanks_illu.png" alt="thanks-subs">
+			<!-- /.bg-image-modal -->
+			<a href="#" class="modal-close" data-toggle="modal">
+				<svg class="close-icon">
+					<use href="icon/sprite.svg#close"></use>
+				</svg> 
+			</a>
+			<h2 class="modal-title">Спасибо за заявку!</h2>
+			<p class="modal-text">Наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!</p>
+			<div class="btn modal-success-btn"> 
+				<a href="./" class="modal-success-link">Вернуться на главную</a> 
+			</div>
+		</div>
+	</div>
 	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/just-validate.production.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

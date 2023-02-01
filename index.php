@@ -277,7 +277,7 @@
 							<svg class="arrow-next" height="13" width="25">
 								<use href="icon/sprite.svg#arrow-next"></use>
 							</svg>
-						</div>
+						</div> 
 					</div>
 				</div>
 			</div>
