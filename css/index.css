@@ -573,10 +573,13 @@ body{
 .client-logo{
 	width: 70px;
 	height: 70px;
+    
+}
+.client-logo-item {
     filter: grayscale(100%);
     transition: filter 0.2s;
 }
-.client-logo:hover{
+.client-logo-item:hover{
     filter: grayscale(0);
     cursor: pointer;
 }
@@ -745,6 +748,9 @@ body{
     background-color: inherit;
     padding: 0 .625rem;
 }
+.input.is-invalid {
+    border: 1px solid red;
+}
 .cta-form-footer{
     display: flex;
     margin-top: 1.875rem;
@@ -754,6 +760,20 @@ body{
 }
 .cta-form-button{
     flex-shrink: 0;
+}
+.just-validate-error-label{
+    position: absolute;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    top: 0;
+    right: 0.8rem;
+    background-color: inherit;
+    font-style: normal;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 160%;
+    transform: translateY(-50%);
+    display: inline-block;
 }
 .notify{
     display: flex;
@@ -951,7 +971,9 @@ body{
     transform: translateY(-20%);
     opacity: 0;
     transition: transform 0.3s, opacity 0.3s;
-
+}
+.modal-success {
+    height: 43.625rem;
 }
 .modal-close {
     display: flex;
@@ -1008,7 +1030,18 @@ body{
     margin-bottom: 1.5rem;
     padding: 1.1rem 4.0625rem;
 }
-
+.modal-success-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    padding: 1.1rem 4.0625rem;
+}
+.modal-success-link{
+    text-decoration: none;
+    color: inherit;
+}
 /* СТИЛИ для header-inner-page */
 .header-inner-page-wrapper{
     position: relative;
@@ -1129,7 +1162,10 @@ body{
 .black-arrows {
     fill: #292D33;
 }
-
+.bg-image-modal {
+    height: 19.375rem;
+    width: 22.5rem;
+}
 @media all and (max-width: 2100px) {
 	.header-image{
 		background-position: center ;
