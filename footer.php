@@ -158,7 +158,7 @@
 					<span class="made-in">
 						Сделано в
 					</span>
-					<svg class="author-logo" width="52" height="11">
+					<svg class="author-logo" width="52на все" height="11">
 						<use href="icon/sprite.svg#ruso"></use>
 					</svg> 
 				</div>
@@ -169,10 +169,10 @@
 	</footer> 
 	<!-- /.footer -->
 
-	<div class="modal">
+	<div class="modal" id="feedback-modal">
 		<div class="modal-dialog">
 			<h2 class="modal-title">Есть вопросы?</h2>
-			<a href="#" class="modal-close" data-toggle="modal">
+			<a href="#" class="modal-close" data-toggle="modal" data-target="#feedback-modal">
 				<svg class="close-icon">
 					<use href="icon/sprite.svg#close"></use>
 				</svg> 
@@ -196,7 +196,7 @@
 							id="modal-user-phone" 
 							type="tel"
                             name="userphone" 
-							class="input modal-input"
+							class="input modal-input phone-mask"
 							placeholder=" "
                             maxlength="30"
                             required>
@@ -217,11 +217,10 @@
 			</form>
 		</div>
 	</div>
-	<div class="modal">
+	<div class="modal" id="alert-modal">
 		<div class="modal-dialog modal-success">
 			<img class="bg-image-modal" src="./image/thanks_illu.png" alt="thanks-subs">
-			<!-- /.bg-image-modal -->
-			<a href="#" class="modal-close" data-toggle="modal">
+			<a href="#" class="modal-close" data-toggle="modal" data-target="#alert-modal">
 				<svg class="close-icon">
 					<use href="icon/sprite.svg#close"></use>
 				</svg> 
