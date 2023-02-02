@@ -126,7 +126,7 @@
 				<a href="tel:+74996861014" class="header-phone-link">+7 (499) 686-10-14</a>
 			</div>
 			<!-- /.header-phone -->
-			<button class="header-button" data-toggle="modal">
+			<button class="header-button" data-toggle="modal" data-target="#feedback-modal">
 				<svg class="header-button-icon">
 					<use href="icon/sprite.svg#phone"></use>
 				</svg>
@@ -149,7 +149,7 @@
 						факта: высококачественный прототип будущего проекта напрямую зависит от анализа существующих
 						паттернов поведения.
 					</p>
-					<button class="btn" data-toggle="modal">Подробнее о компании</button>
+					<button class="btn" data-toggle="modal" data-target="#feedback-modal">Подробнее о компании</button>
 				</div>
 				<!-- /.header-content -->
 				<!-- Слайдер-header -->
