@@ -175,7 +175,8 @@ body{
 } 
 .container{
     max-width: 90rem;
-    margin: 0 auto; 
+    margin: 0 auto;
+    position: relative; 
 }
 .header-content{
     padding-top: 9.375rem;
@@ -625,7 +626,6 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -2;
 }
 .blog-card::before{
     content:"";
@@ -930,6 +930,9 @@ body{
     font-size: .75rem;
     line-height: 160%;
     color: #828A99;
+    display: flex;
+    align-items: center;
+    
 }
 .made-in{
     margin-right: .625rem;
@@ -1042,28 +1045,49 @@ body{
     text-decoration: none;
     color: inherit;
 }
-/* СТИЛИ для header-inner-page */
-.header-inner-page-wrapper{
-    position: relative;
-}
+
+
+/*======== СТИЛИ ВНУТРЕННЕЙ СТРАНИЦЫ блок header-page=========*/
 .header-inner-page {
     position: relative;
     background-color: #F0F2F5;
-    display: none;
-}
-.header-inner-page-i {
-    position: relative;
-    background-color: #F0F2F5;
-    display: none;
+    color: #292D33;
 }
 .header-inner-page-bg {
+    background-image: url("../image/bg-inner-page.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -3;
     position: relative;
-    display: block;
+    padding-top: 97px;
+}
+.header-inner-page-bg::after{
+    content:"";
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    background: rgba(41, 45, 51, 0.6);
+}
+.header-inner-page .seporator,
+.header-inner-page-bg .seporator {
+    margin-top: 3.125rem;
+}
+.header-inner-page-image{
+    position: absolute;
+    bottom:0;
+    right: 0;
+    max-width: 30rem;
 }
 .header-inner-page-content {
     position: relative;
-    padding-top: 3.125rem;
-    padding-bottom: 3.125rem;
+    height: 100%;
+}
+.header-inner-page .header-inner-page-title{
+    color:#292D33;
 }
 .header-inner-page-title {
     font-family: 'Bebas Neue';
@@ -1071,16 +1095,145 @@ body{
     font-weight: 600;
     font-size: 5rem;
     line-height: 120%;
-    color: #292D33;
     margin-top: 1.875rem;
     margin-bottom: 1.25rem;
 }
 
+.bg-inner-page{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+.header-inner-page-wrapper::after{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    z-index: -1;
+    background: rgba(41, 45, 51, 0.6);
+}
+/*======== СТИЛИ ВНУТРЕННЕЙ СТРАНИЦЫ блок header-page-DESCR=========*/
+.header-page-descr {
+    margin: 6.25rem 0;
+}
+.header-page-content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 7.5rem;
+}
+.header-page-image-about {
+    width: 30rem;
+    height: 30rem;
+}
+.header-page-title {
+    max-width: 37.5rem;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3.75rem;
+    line-height: 120%;
+    color: #292D33;
+    margin: 1.875rem 0;
+}
+.header-page-text{
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 160%;
+    color: #828A99;
+}
+/*======== СТИЛИ ВНУТРЕННЕЙ СТРАНИЦЫ блок our-production-block=========*/
+.our-production {
+    margin: 9.375rem 0;
+}
+.our-production-wrapper {
+    display: flex;
+    gap: 7.4375rem;
+}
+.clients-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #828A99;
+}
+.our-production-content .seporator {
+    margin-top: 3.125rem;
+} 
+.our-production-content .clients-title {
+    margin-bottom: 2.8125rem;
+}
+.our-production-content .clients-text {
+    margin-bottom: 2.5rem;
+}
+.our-production-image-about {
+    width: 37.5rem;
+    height: 46.875rem;
+}
+/*========  СТИЛИ ВНУТРЕННЕЙ СТРАНИЦЫ блок SECTION-CENTER =========*/
+.center {
+    margin-bottom: 9.375rem;
+}
+.section-center-title {
+    margin-top: 1.875rem;
+    margin-bottom: 1.8rem;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 120%;
+    max-width: 37.5rem;
+    color: #292D33;
+}
+.section-center-wrapper {
+    display: flex;
+    gap: 6.25rem;
+    margin-bottom: 3.125rem;
+}
+.section-center-text {
+    margin: 0;
+    max-width: 39.6875rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #828A99;
+}
+.center-card{
+    display: flex;
+    position: relative;
+    min-height: 25rem;
+    max-width: 43.75rem;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.center-card-img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+.center-slider-footer {
+    margin-top: 1.875rem;
+}
+/*========  ХЛЕБНЫЕ КРОШКИ  =========*/
 .breadcrambs {
     list-style: none;
     display: flex;
     align-items: center;
     padding: 0;
+    margin: 0;
+    padding-bottom: 3.125rem;
 }
 .breadcrambs-item{
     font-weight: 400;
@@ -1090,12 +1243,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.header-inner-page-image{
-    position: absolute;
-    bottom:0;
-    right: 0;
-    max-width: 30rem;
 }
 .breadcrambs-link {
     text-decoration: none;
@@ -1128,26 +1275,10 @@ body{
 .light:last-child{
     color: #FFFFFF;
 }
-.bg-inner-page{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -2;
-}
-.header-inner-page-wrapper::after{
-    content:"";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top:0;
-    left:0;
-    z-index: -1;
-    background: rgba(41, 45, 51, 0.6);
-}
 
+
+
+/*======== КНОПКИ К СЛАЙДЕРАМ =========*/
 .slider-inner-page .haeder-features-items, 
 .slider-inner-page .header-button-prev, 
 .slider-inner-page .header-button-next {
@@ -1166,6 +1297,10 @@ body{
     height: 19.375rem;
     width: 22.5rem;
 }
+
+/***********************************
+MEDIA-QUIRES
+***********************************/
 @media all and (max-width: 2100px) {
 	.header-image{
 		background-position: center ;

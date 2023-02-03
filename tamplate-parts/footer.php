@@ -158,7 +158,7 @@
 					<span class="made-in">
 						Сделано в
 					</span>
-					<svg class="author-logo" width="52на все" height="11">
+					<svg class="author-logo" width="52" height="11">
 						<use href="icon/sprite.svg#ruso"></use>
 					</svg> 
 				</div>
