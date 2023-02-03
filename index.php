@@ -106,10 +106,10 @@
 					<a href="/about.php" class="header-nav-link">О компании</a>
 				</li>
 				<li class="header-nav-item">
-					<a href="#" class="header-nav-link">Контрактное производство</a>
+					<a href="./contracts.php" class="header-nav-link">Контрактное производство</a>
 				</li>
 				<li class="header-nav-item">
-					<a href="#" class="header-nav-link">Собственные торговые марки</a>
+					<a href="./products_labels.php" class="header-nav-link">Собственные торговые марки</a>
 				</li>
 				<li class="header-nav-item">
 					<a href="#" class="header-nav-link">Новости</a>
@@ -343,38 +343,8 @@
 			</div>
 		</section>
 		<!-- /.section production-->
-
-		<div class="section-labels">
-			<div class="container">
-				<div class="seporator"></div>
-				<!-- /.seporator -->
-				<h2 class="section-labels-title">Cобственные марки</h2>
-				<div class="labels-cards">
-					<div href="#" class="labels-card">
-						<svg class="labels-card-image">
-							<use href="icon/sprite.svg#agtech"></use>
-						</svg>
-						<h3 class="labels-card-title">Автохимия AG-Tech</h3>
-						<div class="labels-card-text-w">
-							<p class="labels-card-text">Для современного мира разбавленное изрядной долей эмпатии, рациональное мышление создаёт предпосылки для поставленных обществом задач.</p>
-						</div>
-					</div>
-					<div href="#" class="labels-card">
-						<svg class="labels-card-image">
-							<use href="icon/sprite.svg#AP"></use>
-						</svg>
-						<h3 class="labels-card-title">Автохимия AP</h3>
-						<div class="labels-card-text-w">
-							<p class="labels-card-text">Для современного мира разбавленное изрядной долей эмпатии, рациональное мышление создаёт предпосылки для поставленных обществом задач.</p>
-						</div>
-					</div>
-				</div>
-				<!-- /.labels-cards -->
-			</div>
-			<!-- /.container -->
-		</div>
-	<!-- /.section-labels -->
-
+		<?php $block_title = "собственные торговые марки"; include_once("./tamplate-parts/trademarks-block.php")?>
+		
 		<section class="section founder">
 			<img src="image/fonder.jpg" alt="founder" class="founder-image">
 			<div class="container">
@@ -551,4 +521,4 @@
 		</section>
 		<!-- /.section blog -->
 
-		<?php include_once('footer.php')?>
+		<?php include_once('./tamplate-parts/footer.php')?>

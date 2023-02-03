@@ -69,26 +69,27 @@ const swiperFeatures = new Swiper(".features-slider", {
 
 const swiperSteps = new Swiper(".steps-slider", {
 	speed: 400,
-	slidesPerView: "auto",
-	spaceBetween: 30,
+	slidesPerView: 1,
+    spaceBetween: 30,
 	navigation: {
 		nextEl: '.steps-button-next',
 		prevEl: '.steps-button-prev',
 	},
-	breakpoints: {
-		// when window width is >= 576px
-		545: {
+	
+    breakpoints: {
+        640: {
 			slidesPerView: 2,
-		},
-		// when window width is >= 768px
-		787: {
-			slidesPerView: 3,
-		},
-		// when window width is >= 1024px
-		1024: {
+			spaceBetween: 20,
+        },
+        768: {
 			slidesPerView: 4,
-		},
-	},
+			spaceBetween: 40,
+        },
+        1024: {
+			slidesPerView: 5,
+			spaceBetween: 50,
+        },
+    },
 });
 
 const swiperBlog = new Swiper(".blog-slider", {
@@ -111,6 +112,27 @@ const swiperBlog = new Swiper(".blog-slider", {
 	},
 });
 
+const swiperCenter = new Swiper(".center-slider", {
+	speed: 400,
+	slidesPerView: 2,
+	spaceBetween: 30,
+	centeredSlides: true,
+	loop: true,
+	navigation: {
+		nextEl: '.center-button-next',
+		prevEl: '.center-button-prev',
+	},
+	breakpoints: {
+		// when window width is >= 576px
+		545: {
+			slidesPerView: 1,
+		},
+		// when window width is >= 768px
+		787: {
+			slidesPerView: 2,
+		},
+	},
+});
 
 
 let currentModal; /* текущее модольное окно */
