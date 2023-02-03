@@ -932,7 +932,7 @@ body{
     color: #828A99;
     display: flex;
     align-items: center;
-    
+
 }
 .made-in{
     margin-right: .625rem;
@@ -1225,6 +1225,92 @@ body{
 }
 .center-slider-footer {
     margin-top: 1.875rem;
+}
+/*========  СТИЛИ ВНУТРЕННЕЙ СТРАНИЦЫ блок MAKE-AUTOCHIM =========*/
+.make-autochim{
+	position: relative;
+    margin-top: 9.375rem;
+	margin-bottom: 9.375rem;
+}
+.make-autochim-image{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 44%;
+}
+.make-autochim-content-wrapper{
+	display: flex;
+	justify-content: flex-start;
+}
+.make-autochim-content{
+	max-width: 45rem;
+	padding: 3.125rem 0;
+}
+.make-autochim-title{
+	font-family: 'Bebas Neue';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 3.75rem;
+	line-height: 120%;
+	color: #292D33;
+	margin: 0;
+	margin-top: 1.6rem;
+	margin-bottom: 1.7rem;
+}
+.make-autochim-title + .make-autochim-text {
+    margin-bottom: 1.4rem;
+}
+
+.make-autochim-text{
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 160%;
+	color: #828A99;
+	margin: 0;
+	margin-bottom: 1.875rem;
+}
+/*========  СТИЛИ ВНУТРЕННЕЙ СТРАНИЦЫ блок CONTRACT-PRODUCTION =========*/
+.contract-production {
+    margin-top: 6.25rem;
+}
+
+.section-SEO-title {
+    margin: 0;
+    margin-bottom: .625rem;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 160%;
+    color: #292D33;
+}
+.section-SEO-text {
+    margin: 0;
+    margin-bottom: 1.25rem;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #828A99;
+}
+.SEO-link {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 160%;
+    color: #5C8EE6;
+	display: flex;
+	align-items:center;
+	text-decoration: none;
+}
+.SEO-link::before {
+    content: "";
+    background-image: url("../image/load.png");
+    width: 24px;
+    height: 24px;
+    margin-right: .9375rem;
+
 }
 /*========  ХЛЕБНЫЕ КРОШКИ  =========*/
 .breadcrambs {
