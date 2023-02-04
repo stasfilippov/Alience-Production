@@ -137,7 +137,7 @@
         </nav>
         <!-- /.navbar -->
         
-        <header class="header <?=$header_style?>">
+        <header class="header <?=$header_style?> privecy" >
             <div class="container">
                 <div class="seporator"></div>
                 <h1 class="header-inner-page-title"><?= $page_title ?></h1>

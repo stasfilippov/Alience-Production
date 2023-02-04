@@ -1451,6 +1451,10 @@ body{
     line-height: 160%;
     color: #292D33;
 }
+.privecy-policy-text {
+    margin: 0;
+    margin-top: 1.4rem;
+}
 /*========  ХЛЕБНЫЕ КРОШКИ  =========*/
 .breadcrambs {
     list-style: none;
@@ -2019,6 +2023,9 @@ MEDIA-QUIRES
     .make-autochim-image {
         margin: 0;
         width: 100%;
+    }
+    .privecy .header-inner-page-title {
+        font-size: 3.5rem;
     }
 }
 @media screen and (max-width: 376px) {
