@@ -124,6 +124,7 @@ const swiperCenter = new Swiper(".center-slider", {
 	},
 	breakpoints: {
 		319: {
+			slidesPerView: 1,
 			spaceBetween: 10,
 			centeredSlides: true,
 		},

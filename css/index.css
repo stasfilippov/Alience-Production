@@ -1132,14 +1132,16 @@ body{
 .header-page-descr {
     margin: 6.25rem 0;
 }
-.header-page-content .seporator {
-    
-}
+
 .header-page-content-wrapper {
     display: flex;
     align-items: center;
     gap: 7.5rem;
 }
+.header-page-image-contracts {
+    width: 37.5rem;
+}
+
 .header-page-image-about {
     width: 30rem;
 }
@@ -1200,8 +1202,11 @@ body{
 .center {
     margin-bottom: 9.375rem;
 }
+.step-item {
+    margin-right: 30px !important;
+}
 .section-center-title {
-    margin-top: 1.875rem;
+    margin-top: 1.5rem;
     margin-bottom: 1.8rem;
     font-family: 'Bebas Neue';
     font-style: normal;
@@ -1249,7 +1254,7 @@ body{
 .make-autochim{
 	position: relative;
     margin-top: 9.375rem;
-	margin-bottom: 9.375rem;
+	margin-bottom: 12.2rem;
 }
 .make-autochim-image{
 	position: absolute;
@@ -1287,6 +1292,9 @@ body{
 	color: #828A99;
 	margin: 0;
 	margin-bottom: 1.875rem;
+}
+.page-autochim {
+    margin-top: 7.9rem;
 }
 /*========  СТИЛИ ВНУТРЕННЕЙ СТРАНИЦЫ блок CONTRACT-PRODUCTION =========*/
 .contract-production {
@@ -1336,23 +1344,24 @@ body{
     display: block;
     min-width: 20.625rem;
 }
+
 /*========  СТИЛИ ВНУТРЕННЕЙ СТРАНИЦЫ блок section-himlist =========*/
 .section-himlist {
-    margin-bottom: 9.375rem;
+    margin-bottom: 8.2rem;
 }
 .himlist-title {
-    margin-top: 1.875rem;
-    margin-bottom: 1.25rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.6rem;
     font-family: 'Bebas Neue';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 3.75rem;
     line-height: 120%;
     color: #292D33;
 }
 .himlist-text {
     margin: 0;
-    margin-bottom: 3.125rem;
+    margin-bottom: 3.3rem;
     max-width: 52.5rem;
     font-family: 'Noto Sans';
     font-style: normal;
@@ -1364,9 +1373,11 @@ body{
 .himlist-list {
     list-style-type: none;
 	padding: 0;
-	columns: 4 auto;
-	margin: 0;
-	column-gap: 4.5rem;
+	display: flex;
+    gap: 3.5rem;
+}
+.himlist-item-wrapper{
+    max-width: 19rem;
 }
 .himlist-item {
     display: flex;
@@ -1382,7 +1393,7 @@ body{
     content:"";
     display: block;
     background-color: #5C8EE5;
-    width: 20px;
+    width: 16px;
     height: 2px;
     margin-right: 20px;
 }
@@ -1444,6 +1455,7 @@ body{
 .breadcrambs {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     padding: 0;
     margin: 0;
@@ -1651,6 +1663,29 @@ MEDIA-QUIRES
 	.logo-footer {
 		width: 7.5rem;
 	}
+    .header-page-image-contracts {
+        width: 35rem;
+    }
+    .header-page-content-wrapper {
+        gap: 3.5rem;
+    }
+    .header-page-title {
+        max-width: 37.5rem;
+        font-size: 2.75rem;
+    }
+    .header-page-text {
+        font-size: 0.89rem;
+    }
+    .make-autochim-content {
+        width: 100%;
+        max-width: none;
+    }
+    .make-autochim-image {
+        position: relative;
+        width: 72%;
+        display: block;
+        margin: 0 auto;
+    }
 }
 @media screen and (max-width: 1130px) {
     .cta-img{
@@ -1820,8 +1855,6 @@ MEDIA-QUIRES
         position: relative;
 		width: 70%;
     }
-    .header-page-image-about {
-    }
     .our-production-wrapper {
         flex-direction: column;
         align-items: center;
@@ -1855,6 +1888,14 @@ MEDIA-QUIRES
 	.footer-info{
 		font-size: .9rem;
 	}
+    .header-inner-page-image {
+        display: none;
+    }
+    .himlist-list {
+        flex-direction: column;
+        gap: 0;
+    }
+
 }
 
 
@@ -1975,6 +2016,10 @@ MEDIA-QUIRES
     .center-card {
         max-width: 37.6rem;
     }
+    .make-autochim-image {
+        margin: 0;
+        width: 100%;
+    }
 }
 @media screen and (max-width: 376px) {
     .mobile-menu-toggle {
@@ -2041,7 +2086,7 @@ MEDIA-QUIRES
 	.section-steps-title{
 		font-size: 3rem;
 		margin-top: 1.5rem;
-		margin-bottom: 2.7rem;
+		margin-bottom: 2.4rem;
 	}
 	.step-numb{
 		font-size: 4rem;
@@ -2374,6 +2419,7 @@ MEDIA-QUIRES
     }
     .breadcrambs {
         padding-bottom: 4rem;
+        row-gap: 0.7rem;
     }
     .header-inner-page-title {
         font-size: 4rem;
@@ -2385,7 +2431,7 @@ MEDIA-QUIRES
     .header-page-image-about {
         width: 29rem;
     }
-    .header-page-content-wrapper {
+    .about-page {
         gap: 4rem;
     }
     .header-page-title {
@@ -2471,7 +2517,63 @@ MEDIA-QUIRES
     .SEO-link {
         font-size: 1.2rem;
     }
+    .breadcrambs-item:last-child {
+        font-size: 1rem;
+    }
+    .header-page-image-contracts {
+        width: 28.5rem;
+    }
+    .autochim {
+        gap: 2.7rem;
+    }
+    .header-page-text {
+        line-height: 162%;
+    }
+    .make-autochim {
+        margin-top: 5.8rem;
+        margin-bottom: 8.2rem;
+    }
+    .make-autochim-title {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    .make-autochim-text {
+        font-size: 1.15rem;
+    }
+    .make-autochim-title + .make-autochim-text {
+        margin-bottom: 2.1rem;
+    }
+    .make-autochim-content .clients-item {
+        margin-bottom: 0.85rem;
+        gap: 1rem;
+    }
+    .himlist-title {
+        margin-bottom: 1.1rem;
+        font-size: 3rem;
+    }
+    .himlist-text {
+        font-size: 1.15rem;
+        margin-bottom: 2.5rem;
+    }
+    .himlist-item-wrapper {
+        max-width: none;
+    }
+    .himlist-item {
+        font-size: 1.15rem;
+        margin-bottom: 1.58rem;
+    }
+    .himlist-item::before {
+        content: "";
+        width: 12px;
+    }
+    .section-himlist {
+        margin-bottom: 7rem;
+    }
+    .center-autohim {
+        margin-bottom: 2.3rem;
+    }
 }
+
 @media screen and (max-width: 374px) {
     .btn {
         min-width: 23.563rem;
@@ -2479,5 +2581,8 @@ MEDIA-QUIRES
     }
     .header-page-image-about {
         width: 24rem;
+    }
+    .header-page-image-contracts {
+        width: 25.5rem;
     }
 }
