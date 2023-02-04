@@ -1052,6 +1052,7 @@ body{
     position: relative;
     background-color: #F0F2F5;
     color: #292D33;
+    margin-bottom: 6.25rem;
 }
 .header-inner-page-bg {
     background-image: url("../image/bg-inner-page.jpg");
