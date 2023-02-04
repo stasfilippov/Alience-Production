@@ -267,7 +267,7 @@
 						<!-- /.step-item -->
 					</ol>
 					<!-- /.steps-list -->
-					<div class="steps-buttons primary-buttons-wrapper">
+					<div class="steps-buttons primary-buttons-wrapper white-arrows">
 						<div class="steps-button-prev primary-button-prev">
 							<svg class="arrow-prev" height="13" width="25">
 								<use href="icon/sprite.svg#arrow-prev"></use>

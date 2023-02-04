@@ -81,7 +81,7 @@ const swiperSteps = new Swiper(".steps-slider", {
 			slidesPerView: 2,
 			spaceBetween: 20,
         },
-        768: {
+        787: {
 			slidesPerView: 4,
 			spaceBetween: 40,
         },

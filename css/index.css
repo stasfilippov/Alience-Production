@@ -72,6 +72,9 @@ body{
 .navbar-light .haeder-logo-path{
 	fill: #292D33;
 }
+.navbar-light .mobile-menu-toggle {
+    padding: 1.6rem 2.4rem;
+}
 .header-logo {
     display: flex;
     align-items: center;
@@ -335,7 +338,7 @@ body{
 	transition: width 0.2s;
 }
 .button-link:hover::before{
-	width: 3.75rem;
+	width: 3.2rem;
 }
 .primary-buttons-wrapper{
     display: flex;
@@ -1666,7 +1669,7 @@ MEDIA-QUIRES
         display: flex;
         justify-content: space-between;
         flex-direction: column;
-        padding: 1.8rem 2.4rem;
+        padding: 2.3rem 2.4rem;
         border-right: 1px solid rgba(235, 235, 240, 0.2);
     }
     .mobile-menu-line{
@@ -1784,7 +1787,11 @@ MEDIA-QUIRES
         display: flex;
     }
 }
-
+@media screen and (max-width: 992px) {
+    .button-link, .production-card, .labels-card,.client-logo-item{
+        pointer-events: none;
+    }
+}
 @media screen and (max-width: 900px) {
     .container {
         max-width: 60rem;
@@ -2308,5 +2315,10 @@ MEDIA-QUIRES
         padding: 1.55rem 4.0625rem;
         min-width: 0;
     }
- 
+}
+@media screen and (max-width: 374px) {
+    .btn {
+        min-width: 23.563rem;
+        font-size: 1rem;
+    }
 }
