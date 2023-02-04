@@ -1,5 +1,5 @@
 <?php 
-$page_title = "О комании";
+$page_title = "О компании";
 $header_style = "header-inner-page";
 $Image_Bg = "";
 $Descr_Title = "мы - эксперты в области производства химии";
@@ -10,8 +10,8 @@ $Product_Title = "Наше производство";
 
 include_once("./tamplate-parts/header-page.php");
 include_once("./tamplate-parts/page-header-descr-block.php");
-include_once("./tamplate-parts/our-production-block.php");
-include_once("./tamplate-parts/center-block.php");?>
+include_once("./tamplate-parts/our-production-block.php");?>
+
         
         <section class="section founder">
             <img src="image/fonder.jpg" alt="founder" class="founder-image">
@@ -22,7 +22,6 @@ include_once("./tamplate-parts/center-block.php");?>
                         <h2 class="founder-title">Отношение к делу и к клиентам</h2>
                         <p class="founder-text">Кстати, интерактивные прототипы описаны максимально подробно. Повседневная практика показывает, что укрепление и развитие внутренней структуры говорит о возможностях соответствующих условий активизации. Внезапно, независимые государства, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут подвергнуты целой серии независимых исследований. С учётом сложившейся международной обстановки, синтетическое тестирование выявляет срочную потребность системы массового участия.</p>
                         <p class="founder-text">А ещё действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, в равной степени предоставлены сами себе. Не следует, однако, забывать, что выбранный нами инновационный путь в значительной степени обусловливает важность дальнейших направлений развития.</p>
-                        <a href="#" class="button-link">О нашей миссии</a>
                     </div>
                     <!-- /.founder-content -->
                 </div>
@@ -31,7 +30,7 @@ include_once("./tamplate-parts/center-block.php");?>
             <!-- /.container -->
         </section>
         <!-- /.section founder -->
-
+        <?php include_once("./tamplate-parts/center-block.php");?>
         <section class="section clients">
             <div class="container">
                 <div class="seporator"></div>

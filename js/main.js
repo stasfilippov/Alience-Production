@@ -6,11 +6,11 @@ const menu = document.querySelector(".mobile-menu");
 const isFront = document.body.classList.contains("front-page")
 
 const lightModeOn = (event) => {
-	navbar.classList.add("navbar-light");
+	navbar.classList.add("navbar-light front");
 };
 
 const lightModeOff = (event) => {
-	navbar.classList.remove("navbar-light");
+	navbar.classList.remove("navbar-light front");
 };
 const changeNavHeight = (height) => {
 	navbar.style.height = height;

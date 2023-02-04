@@ -72,7 +72,7 @@ body{
 .navbar-light .haeder-logo-path{
 	fill: #292D33;
 }
-.navbar-light .mobile-menu-toggle {
+.front .mobile-menu-toggle {
     padding: 1.6rem 2.4rem;
 }
 .header-logo {
@@ -493,7 +493,7 @@ body{
 /* СТИЛИ section-founder */
 .founder{
 	position: relative;
-	margin-bottom: 9.375rem;
+	margin-bottom: 11rem;
 }
 .founder-image{
 	position: absolute;
@@ -665,7 +665,7 @@ body{
 .section-cta{
     position: relative;
     padding-top: 5.8rem;
-    margin-top: 14.375rem;
+    margin-top: 14rem;
     padding-bottom: 6.25rem;
 }
 .cta-img{
@@ -1100,8 +1100,9 @@ body{
     font-weight: 600;
     font-size: 5rem;
     line-height: 120%;
-    margin-top: 1.875rem;
-    margin-bottom: 1.25rem;
+    margin-top: 1.4rem;
+    margin-bottom: 1.7rem;
+    letter-spacing: 0.05rem;
 }
 
 .bg-inner-page{
@@ -1127,6 +1128,9 @@ body{
 .header-page-descr {
     margin: 6.25rem 0;
 }
+.header-page-content .seporator {
+    
+}
 .header-page-content-wrapper {
     display: flex;
     align-items: center;
@@ -1144,7 +1148,9 @@ body{
     font-size: 3.75rem;
     line-height: 120%;
     color: #292D33;
-    margin: 1.875rem 0;
+    margin: 0;
+    margin-top: 1.875rem;
+    margin-bottom: 1.25rem;
 }
 .header-page-text{
     margin: 0;
@@ -1173,10 +1179,13 @@ body{
     margin-top: 3.125rem;
 } 
 .our-production-content .clients-title {
-    margin-bottom: 2.8125rem;
+    margin-bottom: 1.625rem;
 }
 .our-production-content .clients-text {
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.3rem;
+}
+.our-production-content .clients-list {
+    margin-top: 2rem;
 }
 .our-production-image-about {
     width: 37.5rem;
