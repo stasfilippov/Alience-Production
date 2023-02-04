@@ -112,7 +112,7 @@
 					<a href="./products_labels.php" class="header-nav-link">Собственные торговые марки</a>
 				</li>
 				<li class="header-nav-item">
-					<a href="#" class="header-nav-link">Новости</a>
+					<a href="./blog.php" class="header-nav-link">Новости</a>
 				</li>
 				<li class="header-nav-item">
 					<a href="#" class="header-nav-link">Контакты</a>
@@ -340,7 +340,7 @@
 					<!-- If we need navigation buttons -->
 					<div class="blog-slider-footer">
 						<a href="#" class="button-link">Весь Блог</a>
-						<div class="blog-buttons primary-buttons-wrapper">
+						<div class="blog-buttons primary-buttons-wrapper white-arrows">
 							<div class="blog-button-prev primary-button-prev">
 								<svg class="arrow-prev" height="13" width="25">
 									<use href="icon/sprite.svg#arrow-prev"></use>
