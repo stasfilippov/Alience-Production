@@ -2592,4 +2592,7 @@ MEDIA-QUIRES
     .header-page-image-contracts {
         width: 25.5rem;
     }
+    .privecy .header-inner-page-title {
+        font-size: 3rem;
+    }
 }
