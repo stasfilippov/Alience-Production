@@ -361,7 +361,7 @@ body{
 /* СТИЛИ section-production */
 .production {
 	margin-top: 7.9rem;
-    margin-bottom: 9.15rem;
+    margin-bottom: 6.15rem;
 }
 .section-production-title{
 	font-family: 'Bebas Neue';
@@ -419,6 +419,7 @@ body{
 	color: #828A99;
     margin: 0;
 	margin-bottom: 22.3rem;
+    max-width: 19.375rem;
 }
 
 /* СТИЛИ section-labels */
@@ -1450,7 +1451,7 @@ body{
 }
 .breadcrambs-item{
     font-weight: 400;
-    font-size: 14px;
+    font-size: .875rem;
     line-height: 160%;
     color: #828A99;
     display: flex;
@@ -2445,10 +2446,37 @@ MEDIA-QUIRES
     .clients {
         margin-top: 0;
     }
+    .contract-production {
+        margin: 4.1rem 0;
+    }
+    .breadcrambs-item {
+        font-weight: 400;
+        font-size: 1.05rem;
+    }
+    .header-inner-page-title {
+        margin-bottom: 2.1rem;
+    }
+    .section-SEO-title {
+        font-size: 1.65rem;
+        margin-bottom: 1.4rem;
+    }
+    .section-SEO-text {
+        font-size: 1.32rem;
+    }
+    .section-SEO-text {
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+    .SEO-link {
+        font-size: 1.2rem;
+    }
 }
 @media screen and (max-width: 374px) {
     .btn {
         min-width: 23.563rem;
         font-size: 1rem;
+    }
+    .header-page-image-about {
+        width: 24rem;
     }
 }
