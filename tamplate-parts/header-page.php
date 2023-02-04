@@ -149,14 +149,27 @@
                         </a>
                         <meta itemprop="position" content="1" />
                     </li>
+                    <?php 
+                    if (!empty($Image_Bg)) {
+                        echo '<li class="breadcrambs-item"
+                        itemprop="itemListElement" itemscope
+                        itemtype="https://schema.org/ListItem">
+                            <a href="../contracts.php" class="breadcrambs-link" itemprop="item">
+                                <span itemprop="name">Контрактное производство</span>
+                            </a>
+                            <meta itemprop="item" content="../contracts.php" />
+                            <meta itemprop="position" content="2" />
+                        </li>';
+                    }
+                    ?>
                     <li class="breadcrambs-item"
                     itemprop="itemListElement" itemscope
                     itemtype="https://schema.org/ListItem">
-                        <a href="about.html" class="breadcrambs-link" itemprop="item">
+                        <a href="/autohim.php" class="breadcrambs-link" itemprop="item">
                             <span itemprop="name"><?= $page_title ?></span>
                         </a>
-                        <meta itemprop="item" content="./about.html" />
-                        <meta itemprop="position" content="2" />
+                        <meta itemprop="item" content="./autohim.php" />
+                        <meta itemprop="position" content="3" />
                     </li>
                 </ol>
                 <?php 

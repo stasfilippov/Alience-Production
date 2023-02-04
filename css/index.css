@@ -315,7 +315,7 @@ body{
 	line-height: 160%;
 	color: #828A99;
 	margin-bottom: 1.25rem;
-    margin-top: 0.675rem;
+    margin-top: .675rem;
 }
 .button-link{
 	font-weight: 600;
@@ -370,7 +370,7 @@ body{
 	margin: 0;
 	margin-top: 1.5rem;
 	margin-bottom: 3.5rem;
-    letter-spacing: 0.02rem;
+    letter-spacing: .02rem;
 }
 .production-cards{
 	display: flex;
@@ -405,7 +405,7 @@ body{
 	font-weight: 400;
 	font-size: 1.7rem;
 	line-height: 160%;
-    letter-spacing: 0.02rem;
+    letter-spacing: .02rem;
 	color: #292D33;
 	margin-top: 0;
 	margin-bottom: .625rem;
@@ -470,7 +470,7 @@ body{
 	line-height: 160%;
 	color: #828A99;
 	margin: 0;
-	margin-top: 0.625rem;
+	margin-top: .625rem;
 }
 .labels-card-text-w{
     max-width: 22.5rem;
@@ -626,6 +626,7 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: -2;
 }
 .blog-card::before{
     content:"";
@@ -763,13 +764,13 @@ body{
 }
 .just-validate-error-label{
     position: absolute;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
     top: 0;
-    right: 0.8rem;
+    right: .8rem;
     background-color: inherit;
     font-style: normal;
-    font-size: 0.8rem;
+    font-size: .8rem;
     font-weight: 400;
     line-height: 160%;
     transform: translateY(-50%);
@@ -908,7 +909,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.4rem 0;
+    padding: .4rem 0;
 }
 .footer-legal{
     display: flex;
@@ -932,7 +933,7 @@ body{
     color: #828A99;
     display: flex;
     align-items: center;
-    
+
 }
 .made-in{
     margin-right: .625rem;
@@ -1001,7 +1002,7 @@ body{
     font-size: 3rem;
     line-height: 120%;
     color: #292D33;
-    margin-top: 0.1rem;
+    margin-top: .1rem;
     margin-bottom: 1.7rem;
 }
 .modal-text {
@@ -1052,6 +1053,7 @@ body{
     position: relative;
     background-color: #F0F2F5;
     color: #292D33;
+    margin-bottom: 6.25rem;
 }
 .header-inner-page-bg {
     background-image: url("../image/bg-inner-page.jpg");
@@ -1226,6 +1228,201 @@ body{
 .center-slider-footer {
     margin-top: 1.875rem;
 }
+/*========  СТИЛИ ВНУТРЕННЕЙ СТРАНИЦЫ блок MAKE-AUTOCHIM =========*/
+.make-autochim{
+	position: relative;
+    margin-top: 9.375rem;
+	margin-bottom: 9.375rem;
+}
+.make-autochim-image{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 44%;
+}
+.make-autochim-content-wrapper{
+	display: flex;
+	justify-content: flex-start;
+}
+.make-autochim-content{
+	max-width: 45rem;
+	padding: 3.125rem 0;
+}
+.make-autochim-title{
+	font-family: 'Bebas Neue';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 3.75rem;
+	line-height: 120%;
+	color: #292D33;
+	margin: 0;
+	margin-top: 1.6rem;
+	margin-bottom: 1.7rem;
+}
+.make-autochim-title + .make-autochim-text {
+    margin-bottom: 1.4rem;
+}
+
+.make-autochim-text{
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 160%;
+	color: #828A99;
+	margin: 0;
+	margin-bottom: 1.875rem;
+}
+/*========  СТИЛИ ВНУТРЕННЕЙ СТРАНИЦЫ блок CONTRACT-PRODUCTION =========*/
+.contract-production {
+    margin-top: 6.25rem;
+}
+
+.section-SEO-title {
+    margin: 0;
+    margin-bottom: .625rem;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.75rem;
+    line-height: 160%;
+    color: #292D33;
+}
+.section-SEO-text {
+    margin: 0;
+    margin-bottom: 1.25rem;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 160%;
+    color: #828A99;
+}
+.SEO-link {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 160%;
+    color: #5C8EE6;
+	display: flex;
+	align-items:center;
+	text-decoration: none;
+}
+.SEO-link::before {
+    content: "";
+    background-image: url("../image/load.png");
+    width: 24px;
+    height: 24px;
+    margin-right: .9375rem;
+
+}
+/*========  СТИЛИ ВНУТРЕННЕЙ СТРАНИЦЫ блок autochim-section =========*/
+.autochim-section-swiper .step-item {
+    display: block;
+    min-width: 20.625rem;
+}
+/*========  СТИЛИ ВНУТРЕННЕЙ СТРАНИЦЫ блок section-himlist =========*/
+.section-himlist {
+    margin-bottom: 9.375rem;
+}
+.himlist-title {
+    margin-top: 1.875rem;
+    margin-bottom: 1.25rem;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.75rem;
+    line-height: 120%;
+    color: #292D33;
+}
+.himlist-text {
+    margin: 0;
+    margin-bottom: 3.125rem;
+    max-width: 52.5rem;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 160%;
+    color: #828A99;
+}
+.himlist-list {
+    list-style-type: none;
+	padding: 0;
+	columns: 4 auto;
+	margin: 0;
+	column-gap: 4.5rem;
+}
+.himlist-item {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 160%;
+    color: #292D33;
+    margin-bottom: 1.25rem;
+}
+.himlist-item::before {
+    content:"";
+    display: block;
+    background-color: #5C8EE5;
+    width: 20px;
+    height: 2px;
+    margin-right: 20px;
+}
+.clients {
+    margin-top: 9.375rem;
+}
+/*========  СТИЛИ ВНУТРЕННЕЙ СТРАНИЦЫ - BLOG =========*/
+.page-section-blog-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
+    /* grid-template-rows: repeat(5, 1fr); */
+    grid-gap: 1.875rem;
+    margin-bottom: 3.125rem;
+}
+.page-section-blog-item{
+    flex-basis: 50%;
+}
+.page-blog-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+.page-blog-list {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+}
+.page-blog-item {
+    display: block;
+    padding: 12px 20px;
+    color: #292D33;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 160%;
+    transition: border 0.2s, color 0.2s;
+}
+.page-blog-item:hover {
+    border: 1px solid #5C8EE5;
+    color: #5C8EE5;
+}
+.page-blog-link {
+    text-decoration: none;
+    color: inherit;
+}
+/*========  СТИЛИ ВНУТРЕННЕЙ СТРАНИЦЫ - PRIVACY - POLICY  =========*/
+.privecy-policy-desc {
+    margin-bottom: 9.375rem;
+}
+.privecy-policy-text {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 160%;
+    color: #292D33;
+}
 /*========  ХЛЕБНЫЕ КРОШКИ  =========*/
 .breadcrambs {
     list-style: none;
@@ -1378,7 +1575,7 @@ MEDIA-QUIRES
 }
 @media all and (max-width: 1270px) {
     html{
-        font-size: 12.5px;
+        font-size: 12.5008px;
     };
 }
 @media screen and (max-width: 1220px) {
@@ -1614,7 +1811,7 @@ MEDIA-QUIRES
 		font-size: 1.2rem;
 	}
 	.footer-info{
-		font-size: 0.9rem;
+		font-size: .9rem;
 	}
 }
 
@@ -1744,7 +1941,7 @@ MEDIA-QUIRES
 		height: 24px;
 	}
 	.header-logo {
-		padding: 0px 0.5625rem;
+		padding: 0px .5625rem;
 	}
 	.header-text {
 		font-size: 1.15rem;
@@ -1797,7 +1994,7 @@ MEDIA-QUIRES
 	}
 	.step-text{
 		margin: 0;
-		margin-bottom: 0.4rem;
+		margin-bottom: .4rem;
 	}
 	.step-descr{
 		font-size: 1.2rem;
@@ -1891,13 +2088,13 @@ MEDIA-QUIRES
 	}
 	.founder-text{
 		font-size: 1.17rem;
-		margin-bottom: 0.5rem;
+		margin-bottom: .5rem;
 	}
 	.founder-content .button-link {
 		margin-top: 1.5rem;
 	}
     .founder-title + .founder-text {
-        margin-bottom: 0.2rem;
+        margin-bottom: .2rem;
     }
     .founder-content .button-link::before {
         width: 3rem;
@@ -1941,7 +2138,7 @@ MEDIA-QUIRES
         min-height: 16rem;
     }
     .blog-card {
-        padding: 0.9rem 1.5rem;
+        padding: .9rem 1.5rem;
     }
     .section-cta {
         margin-top: 8.375rem;
@@ -1965,7 +2162,7 @@ MEDIA-QUIRES
         height: 5.1rem;
     }
     .cta-form-footer {
-        margin-top: 0.875rem;
+        margin-top: .875rem;
         gap: 2.3rem;
     }
     .cta-form-footer .btn {
@@ -2005,7 +2202,7 @@ MEDIA-QUIRES
     }
     .footer-menu-link {
         font-size: 1.16rem;
-        margin-bottom: 0.75rem;
+        margin-bottom: .75rem;
     }
     .footer-menu-bottom-1, .footer-menu-bottom-2 {
         margin-right: 0;
@@ -2036,7 +2233,7 @@ MEDIA-QUIRES
         align-items: flex-start;
         font-size: 1rem;
         line-height: 160%;
-        gap: 0.8rem;
+        gap: .8rem;
         margin-bottom: 1rem;
     }
     .footer-copyright{
@@ -2078,7 +2275,7 @@ MEDIA-QUIRES
         font-size: 3.4rem;
         line-height: 120%;
         color: #292D33;
-        margin-top: 0.1rem;
+        margin-top: .1rem;
         margin-bottom: 1rem;
     }
     .modal-text {
