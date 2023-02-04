@@ -315,7 +315,7 @@ body{
 	line-height: 160%;
 	color: #828A99;
 	margin-bottom: 1.25rem;
-    margin-top: 0.675rem;
+    margin-top: .675rem;
 }
 .button-link{
 	font-weight: 600;
@@ -370,7 +370,7 @@ body{
 	margin: 0;
 	margin-top: 1.5rem;
 	margin-bottom: 3.5rem;
-    letter-spacing: 0.02rem;
+    letter-spacing: .02rem;
 }
 .production-cards{
 	display: flex;
@@ -405,7 +405,7 @@ body{
 	font-weight: 400;
 	font-size: 1.7rem;
 	line-height: 160%;
-    letter-spacing: 0.02rem;
+    letter-spacing: .02rem;
 	color: #292D33;
 	margin-top: 0;
 	margin-bottom: .625rem;
@@ -470,7 +470,7 @@ body{
 	line-height: 160%;
 	color: #828A99;
 	margin: 0;
-	margin-top: 0.625rem;
+	margin-top: .625rem;
 }
 .labels-card-text-w{
     max-width: 22.5rem;
@@ -763,13 +763,13 @@ body{
 }
 .just-validate-error-label{
     position: absolute;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
     top: 0;
-    right: 0.8rem;
+    right: .8rem;
     background-color: inherit;
     font-style: normal;
-    font-size: 0.8rem;
+    font-size: .8rem;
     font-weight: 400;
     line-height: 160%;
     transform: translateY(-50%);
@@ -908,7 +908,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.4rem 0;
+    padding: .4rem 0;
 }
 .footer-legal{
     display: flex;
@@ -1001,7 +1001,7 @@ body{
     font-size: 3rem;
     line-height: 120%;
     color: #292D33;
-    margin-top: 0.1rem;
+    margin-top: .1rem;
     margin-bottom: 1.7rem;
 }
 .modal-text {
@@ -1280,7 +1280,7 @@ body{
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 28px;
+    font-size: 1.75rem;
     line-height: 160%;
     color: #292D33;
 }
@@ -1290,7 +1290,7 @@ body{
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 160%;
     color: #828A99;
 }
@@ -1311,6 +1311,64 @@ body{
     height: 24px;
     margin-right: .9375rem;
 
+}
+/*========  СТИЛИ ВНУТРЕННЕЙ СТРАНИЦЫ блок autochim-section =========*/
+.autochim-section-swiper .step-item {
+    display: block;
+    min-width: 20.625rem;
+}
+/*========  СТИЛИ ВНУТРЕННЕЙ СТРАНИЦЫ блок section-himlist =========*/
+.section-himlist {
+    margin-bottom: 9.375rem;
+}
+.himlist-title {
+    margin-top: 1.875rem;
+    margin-bottom: 1.25rem;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.75rem;
+    line-height: 120%;
+    color: #292D33;
+}
+.himlist-text {
+    margin: 0;
+    margin-bottom: 3.125rem;
+    max-width: 52.5rem;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 160%;
+    color: #828A99;
+}
+.himlist-list {
+    list-style-type: none;
+	padding: 0;
+	columns: 4 auto;
+	margin: 0;
+	column-gap: 4.5rem;
+}
+.himlist-item {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 160%;
+    color: #292D33;
+    margin-bottom: 1.25rem;
+}
+.himlist-item::before {
+    content:"";
+    display: block;
+    background-color: #5C8EE5;
+    width: 20px;
+    height: 2px;
+    margin-right: 20px;
+}
+.clients {
+    margin-top: 9.375rem;
 }
 /*========  ХЛЕБНЫЕ КРОШКИ  =========*/
 .breadcrambs {
@@ -1464,7 +1522,7 @@ MEDIA-QUIRES
 }
 @media all and (max-width: 1270px) {
     html{
-        font-size: 12.5px;
+        font-size: 12.5008px;
     };
 }
 @media screen and (max-width: 1220px) {
@@ -1700,7 +1758,7 @@ MEDIA-QUIRES
 		font-size: 1.2rem;
 	}
 	.footer-info{
-		font-size: 0.9rem;
+		font-size: .9rem;
 	}
 }
 
@@ -1830,7 +1888,7 @@ MEDIA-QUIRES
 		height: 24px;
 	}
 	.header-logo {
-		padding: 0px 0.5625rem;
+		padding: 0px .5625rem;
 	}
 	.header-text {
 		font-size: 1.15rem;
@@ -1883,7 +1941,7 @@ MEDIA-QUIRES
 	}
 	.step-text{
 		margin: 0;
-		margin-bottom: 0.4rem;
+		margin-bottom: .4rem;
 	}
 	.step-descr{
 		font-size: 1.2rem;
@@ -1977,13 +2035,13 @@ MEDIA-QUIRES
 	}
 	.founder-text{
 		font-size: 1.17rem;
-		margin-bottom: 0.5rem;
+		margin-bottom: .5rem;
 	}
 	.founder-content .button-link {
 		margin-top: 1.5rem;
 	}
     .founder-title + .founder-text {
-        margin-bottom: 0.2rem;
+        margin-bottom: .2rem;
     }
     .founder-content .button-link::before {
         width: 3rem;
@@ -2027,7 +2085,7 @@ MEDIA-QUIRES
         min-height: 16rem;
     }
     .blog-card {
-        padding: 0.9rem 1.5rem;
+        padding: .9rem 1.5rem;
     }
     .section-cta {
         margin-top: 8.375rem;
@@ -2051,7 +2109,7 @@ MEDIA-QUIRES
         height: 5.1rem;
     }
     .cta-form-footer {
-        margin-top: 0.875rem;
+        margin-top: .875rem;
         gap: 2.3rem;
     }
     .cta-form-footer .btn {
@@ -2091,7 +2149,7 @@ MEDIA-QUIRES
     }
     .footer-menu-link {
         font-size: 1.16rem;
-        margin-bottom: 0.75rem;
+        margin-bottom: .75rem;
     }
     .footer-menu-bottom-1, .footer-menu-bottom-2 {
         margin-right: 0;
@@ -2122,7 +2180,7 @@ MEDIA-QUIRES
         align-items: flex-start;
         font-size: 1rem;
         line-height: 160%;
-        gap: 0.8rem;
+        gap: .8rem;
         margin-bottom: 1rem;
     }
     .footer-copyright{
@@ -2164,7 +2222,7 @@ MEDIA-QUIRES
         font-size: 3.4rem;
         line-height: 120%;
         color: #292D33;
-        margin-top: 0.1rem;
+        margin-top: .1rem;
         margin-bottom: 1rem;
     }
     .modal-text {

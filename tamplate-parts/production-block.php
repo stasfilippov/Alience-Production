@@ -7,7 +7,7 @@
                 }
                 ?>
 				<div class="production-cards">
-					<a href="#" class="production-card">
+					<a href="../autohim.php" class="production-card">
 						<div class="production-card-content">
 							<h3 class="production-card-title">Автомобильная химия</h3>
 							<p class="production-card-text">Безусловно, сплочённость команды профессионалов позволяет оценить значение форм воздействия.</p>

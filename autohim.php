@@ -1,6 +1,7 @@
 <?php
-$page_title = "Контрактное производство";
+$page_title = "Автомобильная химия";
 $header_style = "header-inner-page";
+$Image_Bg = "yes";
 $Descr_Image = "contracts";
 $Descr_Title = "Контрактное производство автомобильной химии";
 $Descr_Text = "Прежде всего, начало повседневной работы по формированию позиции однозначно фиксирует необходимость приоритизации разума над эмоциями. Кстати, представители современных социальных резервов неоднозначны и будут описаны максимально подробно. </br> </br>
@@ -74,4 +75,116 @@ include_once("./tamplate-parts/page-header-descr-block.php"); ?>
 </section>
 <!-- /.section make-autochim -->
 
+<section class="section-himlist">
+    <div class="container">
+        <div class="seporator"></div>
+        <h2 class="himlist-title">Виды автохимии</h2>
+        <p class="himlist-text">Но современная методология разработки позволяет оценить значение прогресса профессионального сообщества. Есть над чем задуматься: тщательные исследования конкурентов набирают популярность среди определенных слоев населения, а значит, должны быть ассоциативно распределены по отраслям.</p>
+        <ul class="himlist-list">
+            <li class="himlist-item">Антискотч</li>
+            <li class="himlist-item">Многоцелевая смазка</li>
+            <li class="himlist-item">Жидкий ключ</li>
+            <li class="himlist-item">Высокотемпературная смазка</li>
+            <li class="himlist-item">Универсальный очиститель деталей</li>
+            <li class="himlist-item">Силиконовая смазка</li>
+            <li class="himlist-item">Цепная смазка</li>
+            <li class="himlist-item">Медная смазка</li>
+            <li class="himlist-item">Графитовая смазка</li>
+            <li class="himlist-item">Очиститель кондиционера пенный</li>
+            <li class="himlist-item">Очиститель тормозных дисков</li>
+            <li class="himlist-item">Очиститель битумных пятен</li>
+            <li class="himlist-item">Очиститель кондционера</li>
+            <li class="himlist-item">Очиститель дросельной заслонки</li>
+            <li class="himlist-item">Очиститель обивки </li>
+            <li class="himlist-item">Тефлоновая смазка</li>
+            <li class="himlist-item">Очиститель двигателя</li>
+            <li class="himlist-item">Универсальный очиститель</li>
+            <li class="himlist-item">Чернитель шин </li>
+            <li class="himlist-item">Чернитель шин + очистка</li>
+        </ul>
+    </div>
+</section>
+
+<?php include_once('./tamplate-parts/center-block.php')?>
+<section class="section section-steps">
+    <div class="container">
+        <div class="seporator"></div>
+        <!-- /.seporator -->
+        <h2 class="section-steps-title">схема работы</h2>
+        <!-- /.section-light-title -->
+        <div class="swiper steps-slider">
+            <ol class="swiper-wrapper steps-list autochim-section-swiper">
+                <li class="swiper-slide step-item">
+                    <span class="step-numb">01</span>
+                    <!-- /.step-numb -->
+                    <div class="step-item-w">
+                        <h2 class="step-text">Знакомство</h2>
+                        <!-- /.step-text -->
+                        <p class="step-descr">Безусловно, сплочённость команды профессионалов позволяет оценить
+                            значение форм воздействия.</p>
+                        <!-- /.step-descr -->
+                        <a href="#" class="button-link">Оставить заявку</a>
+                    </div>
+                    <!-- /.step-item-w -->
+                </li>
+                <!-- /.step-item -->
+                <li class="swiper-slide step-item">
+                    <span class="step-numb">02</span>
+                    <!-- /.step-numb -->
+                    <div class="step-item-w">
+                        <h2 class="step-text">Заключение договора</h2>
+                        <!-- /.step-text -->
+                        <p class="step-descr">Лишь интерактивные прототипы призваны к ответу.</p>
+                        <!-- /.step-descr -->
+                    </div>
+                    <!-- /.step-item-w -->
+                </li>
+                <!-- /.step-item -->
+                <li class="swiper-slide step-item">
+                    <span class="step-numb">03</span>
+                    <!-- /.step-numb -->
+                    <div class="step-item-w">
+                        <h2 class="step-text">Производство</h2>
+                        <!-- /.step-text -->
+                        <p class="step-descr">А также стремящиеся вытеснить традиционное производство, нанотехнологии
+                            функционально разнесены на независимые элементы.</p>
+                        <!-- /.step-descr -->
+                    </div>
+                    <!-- /.step-item-w -->
+                </li>
+                <!-- /.step-item -->
+                <li class="swiper-slide step-item">
+                    <span class="step-numb">04</span>
+                    <!-- /.step-numb -->
+                    <div class="step-item-w">
+                        <h2 class="step-text">Доставка</h2>
+                        <!-- /.step-text -->
+                        <p class="step-descr">В частности, экономическая повестка сегодняшнего дня говорит о
+                            возможностях приоритизации разума над эмоциями.</p>
+                        <!-- /.step-descr -->
+                    </div>
+                    <!-- /.step-item-w -->
+                </li>
+                <!-- /.step-item -->
+            </ol>
+            <!-- /.steps-list -->
+            <div class="steps-buttons primary-buttons-wrapper">
+                <div class="steps-button-prev primary-button-prev">
+                    <svg class="arrow-prev" height="13" width="25">
+                        <use href="icon/sprite.svg#arrow-prev"></use>
+                    </svg>
+                </div>
+                <div class="steps-button-next primary-button-next">
+                    <svg class="arrow-next" height="13" width="25">
+                        <use href="icon/sprite.svg#arrow-next"></use>
+                    </svg>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</section>
+<!-- /.section -->
+<?php include_once('./tamplate-parts/clients-block.php')?>
+<!-- /.section clients -->
 <?php include_once('./tamplate-parts/footer.php') ?>
