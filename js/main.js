@@ -114,24 +114,31 @@ const swiperBlog = new Swiper(".blog-slider", {
 
 const swiperCenter = new Swiper(".center-slider", {
 	speed: 400,
-	slidesPerView: 2,
-	spaceBetween: 30,
+	slidesPerView: "auto",
 	centeredSlides: true,
+	spaceBetween: 30,
 	loop: true,
 	navigation: {
 		nextEl: '.center-button-next',
 		prevEl: '.center-button-prev',
 	},
 	breakpoints: {
-		// when window width is >= 576px
+		319: {
+			spaceBetween: 10,
+			centeredSlides: true,
+		},
 		545: {
 			slidesPerView: 1,
+			centeredSlides: true,
 		},
-		// when window width is >= 768px
-		787: {
+        780: {
+			slidesPerView: 1,
+			centeredSlides: true,
+        },
+		1024: {
 			slidesPerView: 2,
-		},
-	},
+		}
+    },
 });
 
 

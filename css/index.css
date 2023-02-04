@@ -505,6 +505,9 @@ body{
 	display: flex;
 	justify-content: flex-end;
 }
+.about-page .button-link {
+    display: none;
+}
 .founder-content{
 	max-width: 45rem;
 	padding: 3.125rem 0;
@@ -1138,7 +1141,6 @@ body{
 }
 .header-page-image-about {
     width: 30rem;
-    height: 30rem;
 }
 .header-page-title {
     max-width: 37.5rem;
@@ -1171,7 +1173,7 @@ body{
 .clients-text {
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 160%;
     color: #828A99;
 }
@@ -1187,9 +1189,11 @@ body{
 .our-production-content .clients-list {
     margin-top: 2rem;
 }
-.our-production-image-about {
-    width: 37.5rem;
-    height: 46.875rem;
+.our-production-image-about{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 41.6%;
 }
 /*========  СТИЛИ ВНУТРЕННЕЙ СТРАНИЦЫ блок SECTION-CENTER =========*/
 .center {
@@ -1201,7 +1205,7 @@ body{
     font-family: 'Bebas Neue';
     font-style: normal;
     font-weight: 600;
-    font-size: 60px;
+    font-size: 3.75rem;
     line-height: 120%;
     max-width: 37.5rem;
     color: #292D33;
@@ -1216,7 +1220,7 @@ body{
     max-width: 39.6875rem;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 160%;
     color: #828A99;
 }
@@ -1808,6 +1812,27 @@ MEDIA-QUIRES
     .header-title {
         font-size: 4rem;
     }
+    .header-page-content-wrapper {
+        flex-direction: column;
+    }
+    .our-production-image-about {
+        position: relative;
+		width: 70%;
+    }
+    .header-page-image-about {
+    }
+    .our-production-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .our-production-text-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .clients-text {
+        max-width: 35rem;;
+    }
 	.founder-image{
 		position: relative;
 		width: 100%;
@@ -1886,6 +1911,12 @@ MEDIA-QUIRES
     .header-inner-page-image {
         display: none;
     }
+    .section-center-wrapper .text-last {
+        display: none;
+    }
+    .center-card {
+        max-width: 43.75rem;
+    }
 }
 @media screen and (max-width: 576px) {
     .container {
@@ -1933,9 +1964,15 @@ MEDIA-QUIRES
         flex-direction: column;
         align-items: stretch;
     }
+    .about-page .button-link {
+        display: flex;
+    }
     .footer-menu-column {
         columns: 1;
         column-gap: 0;
+    }
+    .center-card {
+        max-width: 37.6rem;
     }
 }
 @media screen and (max-width: 376px) {
@@ -2323,6 +2360,90 @@ MEDIA-QUIRES
         margin-bottom: 1.5rem;
         padding: 1.55rem 4.0625rem;
         min-width: 0;
+    }
+    .center-card {
+        max-width: 28.8rem;
+    }
+    .header-inner-page .seporator {
+        margin-top: 4.125rem;
+    }
+    .header-inner-page {
+        margin-bottom: 0;
+    }
+    .breadcrambs {
+        padding-bottom: 4rem;
+    }
+    .header-inner-page-title {
+        font-size: 4rem;
+    }
+    .header-page-descr {
+        margin-top: 4.25rem;
+        margin-bottom: 4.3rem;
+    }
+    .header-page-image-about {
+        width: 29rem;
+    }
+    .header-page-content-wrapper {
+        gap: 4rem;
+    }
+    .header-page-title {
+        font-size: 3rem;
+        margin-top: 1.5rem;
+    }
+    .header-page-text {
+        font-size: 1.15rem;
+    }
+    .our-production {
+        margin-top: 5.5rem;
+        margin-bottom: 9.375rem;
+    }
+    .our-production-image-about {
+        width: 100%;
+        margin-bottom: 2.6rem;
+    }
+    .our-production-content .clients-title {
+        margin-bottom: 2.8rem;
+    }
+    .our-production-content .clients-text {
+        margin: 0;
+        margin-bottom: 0.7rem;
+        font-size: 1.16rem;
+    }
+    .our-production-text-wrapper {
+        align-items: flex-start;
+    }
+    .our-production-content .clients-list {
+        margin-top: 1.5rem;
+    }
+    .about-page .founder-content {
+        padding: 2rem 0;
+        margin-bottom: 1.5rem;
+    }
+    .section-center-title {
+        font-size: 3rem;
+    }
+    .section-center-text {
+        font-size: 1.15rem;
+    }
+    .section-center-title {
+        margin-bottom: 1rem;
+    }
+    .section-center-wrapper {
+        display: flex;
+        gap: 6.25rem;
+        margin-bottom: 2.125rem;
+    }
+    .center-slider {
+        max-height: 16.1875rem;
+    }
+    .center-slider-footer {
+        margin-top: 1.5rem;
+    }
+    .center {
+        margin-bottom: 8.375rem;
+    }
+    .clients {
+        margin-top: 0;
     }
 }
 @media screen and (max-width: 374px) {
