@@ -1411,6 +1411,18 @@ body{
     text-decoration: none;
     color: inherit;
 }
+/*========  СТИЛИ ВНУТРЕННЕЙ СТРАНИЦЫ - PRIVACY - POLICY  =========*/
+.privecy-policy-desc {
+    margin-bottom: 9.375rem;
+}
+.privecy-policy-text {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 160%;
+    color: #292D33;
+}
 /*========  ХЛЕБНЫЕ КРОШКИ  =========*/
 .breadcrambs {
     list-style: none;
