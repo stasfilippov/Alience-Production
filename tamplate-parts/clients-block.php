@@ -1,4 +1,4 @@
-<section class="section clients">
+<section class="section clients page-autochim">
     <div class="container">
         <div class="seporator"></div>
         <div class="clients-wrapper">
@@ -70,7 +70,7 @@
             <!-- /.clients-content -->
             <div class="clients-logo-list">
                 <a href="#" class="client-logo-item">
-                    <img class="client-logo" src="image/clients-logo.png" alt="client-logo">
+					<img class="client-logo" src="image/clients-logo.png" alt="client-logo">
                 </a>
                 <a href="#" class="client-logo-item">
                     <img class="client-logo" src="image/clients-logo.png" alt="client-logo">

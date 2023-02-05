@@ -3,7 +3,7 @@ const logoLight = document.querySelector(".logo-light");
 const logoBlack = document.querySelector(".logo-black");
 const mMenuToggle = document.querySelector(".mobile-menu-toggle");
 const menu = document.querySelector(".mobile-menu");
-const isFront = document.body.classList.contains("front-page")
+const isFront = document.body.classList.contains("front-page");
 
 const lightModeOn = (event) => {
 	navbar.classList.add("navbar-light");
@@ -40,6 +40,7 @@ mMenuToggle.addEventListener("click", (event) => {
 	menu.classList.contains("is-open") ? closeMenu() : openMenu();
 });
 
+
 const swiperFeatures = new Swiper(".features-slider", {
 	speed: 400,
 	slidesPerView: 1,
@@ -66,31 +67,32 @@ const swiperFeatures = new Swiper(".features-slider", {
 		},
 	},
 });
-
-const swiperSteps = new Swiper(".steps-slider", {
+const swiperStep = new Swiper(".steps-slider", {
 	speed: 400,
-	slidesPerView: 1,
-    spaceBetween: 30,
+	freeMode: true,
+	spaceBetween: 30,
 	navigation: {
-		nextEl: '.steps-button-next',
-		prevEl: '.steps-button-prev',
+	  nextEl: ".steps-button-next",
+	  prevEl: ".steps-button-prev",
 	},
-	
-    breakpoints: {
-        640: {
-			slidesPerView: 2,
-			spaceBetween: 20,
-        },
-        768: {
-			slidesPerView: 4,
-			spaceBetween: 40,
-        },
-        1024: {
-			slidesPerView: 5,
-			spaceBetween: 50,
-        },
-    },
-});
+	breakpoints: {
+	  // when window width is >= 576px
+	  0: {
+		slidesPerView: "auto",
+	  },
+	  // when window width is >= 768px
+	  768: {
+		slidesPerView: 2,
+	  },
+	  // when window width is >= 1024px
+	  1024: {
+		slidesPerView: 3,
+	  },
+	  1200: {
+		slidesPerView: 4,
+	  },
+	},
+  });
 
 const swiperBlog = new Swiper(".blog-slider", {
 	speed: 400,
@@ -114,24 +116,32 @@ const swiperBlog = new Swiper(".blog-slider", {
 
 const swiperCenter = new Swiper(".center-slider", {
 	speed: 400,
-	slidesPerView: 2,
-	spaceBetween: 30,
+	slidesPerView: "auto",
 	centeredSlides: true,
+	spaceBetween: 30,
 	loop: true,
 	navigation: {
 		nextEl: '.center-button-next',
 		prevEl: '.center-button-prev',
 	},
 	breakpoints: {
-		// when window width is >= 576px
+		319: {
+			slidesPerView: 1,
+			spaceBetween: 10,
+			centeredSlides: true,
+		},
 		545: {
 			slidesPerView: 1,
+			centeredSlides: true,
 		},
-		// when window width is >= 768px
-		787: {
+        780: {
+			slidesPerView: 1,
+			centeredSlides: true,
+        },
+		1024: {
 			slidesPerView: 2,
-		},
-	},
+		}
+    },
 });
 
 

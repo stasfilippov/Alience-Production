@@ -1,6 +1,6 @@
         <header class="header-page-descr">
             <div class="container">
-                <div class="header-page-content-wrapper">
+                <div class="header-page-content-wrapper about-page autochim">
                     <img src="./image/header-page-image-<?=$Descr_Image?>.png" alt="Aliance_Production" class="header-page-image-<?=$Descr_Image?>">
                     <div class="header-page-content">
                         <div class="seporator"></div>

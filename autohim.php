@@ -4,10 +4,13 @@ $header_style = "header-inner-page";
 $Image_Bg = "yes";
 $Descr_Image = "contracts";
 $Descr_Title = "Контрактное производство автомобильной химии";
-$Descr_Text = "Прежде всего, начало повседневной работы по формированию позиции однозначно фиксирует необходимость приоритизации разума над эмоциями. Кстати, представители современных социальных резервов неоднозначны и будут описаны максимально подробно. </br> </br>
+$Descr_Text = "Прежде всего, начало повседневной работы по формированию позиции однозначно фиксирует необходимость приоритизации разума над эмоциями. Кстати, представители современных социальных резервов неоднозначны и будут описаны максимально подробно. </br>
 Но социально-экономическое развитие напрямую зависит от поставленных обществом задач! Безусловно, постоянный количественный рост и сфера нашей активности предоставляет широкие возможности для системы обучения кадров, соответствующей насущным потребностям. В целом, конечно, выбранный нами инновационный путь обеспечивает широкому кругу (специалистов) участие в формировании своевременного выполнения сверхзадачи. А ещё элементы политического процесса представлены в исключительно положительном свете. Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высокотехнологичная концепция общественного уклада создаёт предпосылки для глубокомысленных рассуждений. В своём стремлении повысить качество жизни, они забывают, что дальнейшее развитие различных форм деятельности, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для поставленных обществом задач.";
+
 include_once('./tamplate-parts/header-page.php');
 include_once("./tamplate-parts/page-header-descr-block.php"); ?>
+
+
 <section class="section make-autochim">
     <div class="container">
         <div class="make-autochim-content-wrapper">
@@ -30,37 +33,37 @@ include_once("./tamplate-parts/page-header-descr-block.php"); ?>
                     </li>
                     <li class="clients-item">
                         <svg height="30" width="30" class="clients-item-img">
-                            <use href="icon/sprite.svg#him"></use>
+                            <use href="./icon/sprite.svg#him"></use>
                         </svg>
                         Полное описание товаров
                     </li>
                     <li class="clients-item">
                         <svg height="30" width="30" class="clients-item-img">
-                            <use href="icon/sprite.svg#car"></use>
+                            <use href="./icon/sprite.svg#car"></use>
                         </svg>
                         Актуальные цены
                     </li>
                     <li class="clients-item">
                         <svg height="30" width="30" class="clients-item-img">
-                            <use href="icon/sprite.svg#brush"></use>
+                            <use href="./icon/sprite.svg#brush"></use>
                         </svg>
                         Лаки и краски
                     </li>
                     <li class="clients-item">
                         <svg height="30" width="30" class="clients-item-img">
-                            <use href="icon/sprite.svg#him"></use>
+                            <use href="./icon/sprite.svg#him"></use>
                         </svg>
                         Химические производства
                     </li>
                     <li class="clients-item">
                         <svg height="30" width="30" class="clients-item-img">
-                            <use href="icon/sprite.svg#brush"></use>
+                            <use href="./icon/sprite.svg#brush"></use>
                         </svg>
                         Лаки и краски
                     </li>
                     <li class="clients-item">
                         <svg height="30" width="30" class="clients-item-img">
-                            <use href="icon/sprite.svg#him"></use>
+                            <use href="./icon/sprite.svg#him"></use>
                         </svg>
                         Химические производства
                     </li>
@@ -71,7 +74,7 @@ include_once("./tamplate-parts/page-header-descr-block.php"); ?>
         <!-- /.make-autochim-content-wrappper -->
     </div>
     <!-- /.container -->
-    <img src="image/image-make-autochim.png" alt="make-autochim" class="make-autochim-image">
+    <img src="./image/image-make-autochim.png" alt="make-autochim" class="make-autochim-image">
 </section>
 <!-- /.section make-autochim -->
 
@@ -81,31 +84,41 @@ include_once("./tamplate-parts/page-header-descr-block.php"); ?>
         <h2 class="himlist-title">Виды автохимии</h2>
         <p class="himlist-text">Но современная методология разработки позволяет оценить значение прогресса профессионального сообщества. Есть над чем задуматься: тщательные исследования конкурентов набирают популярность среди определенных слоев населения, а значит, должны быть ассоциативно распределены по отраслям.</p>
         <ul class="himlist-list">
-            <li class="himlist-item">Антискотч</li>
-            <li class="himlist-item">Многоцелевая смазка</li>
-            <li class="himlist-item">Жидкий ключ</li>
-            <li class="himlist-item">Высокотемпературная смазка</li>
-            <li class="himlist-item">Универсальный очиститель деталей</li>
-            <li class="himlist-item">Силиконовая смазка</li>
-            <li class="himlist-item">Цепная смазка</li>
-            <li class="himlist-item">Медная смазка</li>
-            <li class="himlist-item">Графитовая смазка</li>
-            <li class="himlist-item">Очиститель кондиционера пенный</li>
-            <li class="himlist-item">Очиститель тормозных дисков</li>
-            <li class="himlist-item">Очиститель битумных пятен</li>
-            <li class="himlist-item">Очиститель кондционера</li>
-            <li class="himlist-item">Очиститель дросельной заслонки</li>
-            <li class="himlist-item">Очиститель обивки </li>
-            <li class="himlist-item">Тефлоновая смазка</li>
-            <li class="himlist-item">Очиститель двигателя</li>
-            <li class="himlist-item">Универсальный очиститель</li>
-            <li class="himlist-item">Чернитель шин </li>
-            <li class="himlist-item">Чернитель шин + очистка</li>
+            <div class="himlist-item-wrapper">
+                <li class="himlist-item">Антискотч</li>
+                <li class="himlist-item">Многоцелевая смазка</li>
+                <li class="himlist-item">Жидкий ключ</li>
+                <li class="himlist-item">Высокотемпературная смазка</li>
+                <li class="himlist-item">Универсальный очиститель деталей</li>
+            </div>
+            <div class="himlist-item-wrapper">
+                <li class="himlist-item">Силиконовая смазка</li>
+                <li class="himlist-item">Цепная смазка</li>
+                <li class="himlist-item">Медная смазка</li>
+                <li class="himlist-item">Графитовая смазка</li>
+                <li class="himlist-item">Очиститель кондиционера пенный</li>
+                
+            </div>
+            <div class="himlist-item-wrapper">
+                <li class="himlist-item">Очиститель тормозных дисков</li>
+                <li class="himlist-item">Очиститель битумных пятен</li>
+                <li class="himlist-item">Очиститель кондционера</li>
+                <li class="himlist-item">Очиститель дросельной заслонки</li>
+                <li class="himlist-item">Очиститель обивки </li>
+            </div>
+            <div class="himlist-item-wrapper">
+                <li class="himlist-item">Тефлоновая смазка</li>
+                <li class="himlist-item">Очиститель двигателя</li>
+                <li class="himlist-item">Универсальный очиститель</li>
+                <li class="himlist-item">Чернитель шин </li>
+                <li class="himlist-item">Чернитель шин + очистка</li>
+            </div>
         </ul>
     </div>
 </section>
 
 <?php include_once('./tamplate-parts/center-block.php')?>
+
 <section class="section section-steps">
     <div class="container">
         <div class="seporator"></div>
@@ -168,7 +181,7 @@ include_once("./tamplate-parts/page-header-descr-block.php"); ?>
                 <!-- /.step-item -->
             </ol>
             <!-- /.steps-list -->
-            <div class="steps-buttons primary-buttons-wrapper">
+            <div class="steps-buttons primary-buttons-wrapper white-arrows">
                 <div class="steps-button-prev primary-button-prev">
                     <svg class="arrow-prev" height="13" width="25">
                         <use href="icon/sprite.svg#arrow-prev"></use>
@@ -185,6 +198,111 @@ include_once("./tamplate-parts/page-header-descr-block.php"); ?>
     <!-- /.container -->
 </section>
 <!-- /.section -->
-<?php include_once('./tamplate-parts/clients-block.php')?>
+<section class="section page-autochim">
+    <div class="container">
+        <div class="seporator"></div>
+        <div class="clients-wrapper">
+            <div class="clients-content">
+                <h2 class="clients-title">Производим аэрозольную продукцию для разных сфер</h2>
+                <ul class="clients-list">
+                    <li class="clients-item">
+                        <svg height="30" width="30" class="clients-item-img">
+                            <use href="icon/sprite.svg#him"></use>
+                        </svg>
+                        Химические производства
+                    </li>
+                    <li class="clients-item">
+                        <svg height="30" width="30" class="clients-item-img">
+                            <use href="icon/sprite.svg#car"></use>
+                        </svg>
+                        Автомойки
+                    </li>
+                    <li class="clients-item">
+                        <svg height="30" width="30" class="clients-item-img">
+                            <use href="icon/sprite.svg#eat"></use>
+                        </svg>
+                        Пищевая продукция
+                    </li>
+                    <li class="clients-item">
+                        <svg height="30" width="30" class="clients-item-img">
+                            <use href="icon/sprite.svg#brush"></use>
+                        </svg>
+                        Лаки и краски
+                    </li>
+                    <li class="clients-item">
+                        <svg height="30" width="30" class="clients-item-img">
+                            <use href="icon/sprite.svg#cosmetic"></use>
+                        </svg>
+                        Косметические средства
+                    </li>
+                    <li class="clients-item">
+                        <svg height="30" width="30" class="clients-item-img">
+                            <use href="icon/sprite.svg#car-cosm"></use>
+                        </svg>
+                        Автомобильная косметика
+                    </li>
+                    <li class="clients-item">
+                        <svg height="30" width="30" class="clients-item-img">
+                            <use href="icon/sprite.svg#shirt"></use>
+                        </svg>
+                        Косметика по уходу за одеждой
+                    </li>
+                    <li class="clients-item">
+                        <svg height="30" width="30" class="clients-item-img">
+                            <use href="icon/sprite.svg#boots"></use>
+                        </svg>
+                        Косметика по уходу за обувью
+                    </li>
+                    <li class="clients-item">
+                        <svg height="30" width="30" class="clients-item-img">
+                            <use href="icon/sprite.svg#bricks"></use>
+                        </svg>
+                        Строительные материалы
+                    </li>
+                    <li class="clients-item">
+                        <svg height="30" width="30" class="clients-item-img">
+                            <use href="icon/sprite.svg#more"></use>
+                        </svg>
+                        И многих других
+                    </li>
+                </ul>
+            </div>
+            <!-- /.clients-content -->
+            <div class="clients-logo-list">
+                <a href="#" class="client-logo-item">
+                    <img class="client-logo" src="./image/clients-logo.png" alt="client-logo">
+                </a>
+                <a href="#" class="client-logo-item">
+                    <img class="client-logo" src="./image/clients-logo.png" alt="client-logo">
+                </a>
+                <a href="#" class="client-logo-item">
+                    <img class="client-logo" src="./image/clients-logo.png" alt="client-logo">
+                </a>
+                <a href="#" class="client-logo-item">
+                    <img class="client-logo" src="./image/clients-logo.png" alt="client-logo">
+                </a>
+                <a href="#" class="client-logo-item">
+                    <img class="client-logo" src="./image/clients-logo.png" alt="client-logo">
+                </a>
+                <a href="#" class="client-logo-item">
+                    <img class="client-logo" src="./image/clients-logo.png" alt="client-logo">
+                </a>
+                <a href="#" class="client-logo-item">
+                    <img class="client-logo" src="./image/clients-logo.png" alt="client-logo">
+                </a>
+                <a href="#" class="client-logo-item">
+                    <img class="client-logo" src="./image/clients-logo.png" alt="client-logo">
+                </a>
+                <a href="#" class="client-logo-item">
+                    <img class="client-logo" src="./image/clients-logo.png" alt="client-logo">
+                </a>
+            </div>
+            <!-- /.clients-logo-wrapper -->
+        </div>
+        <!-- /.clients-wrapper -->
+    </div>
+    <!-- /.container -->
+</section>
 <!-- /.section clients -->
+
 <?php include_once('./tamplate-parts/footer.php') ?>

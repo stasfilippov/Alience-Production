@@ -1,4 +1,8 @@
-<section class="section production contract-production">
+<section class="section production <?php 
+                if (!empty($name_section)) {
+                    echo $name_section;
+                }
+                ?>">
 			<div class="container">
                 <?php 
                 if (!empty($block_title)) {
@@ -7,7 +11,7 @@
                 }
                 ?>
 				<div class="production-cards">
-					<a href="../autohim.php" class="production-card">
+					<a href="./autohim.php" class="production-card">
 						<div class="production-card-content">
 							<h3 class="production-card-title">Автомобильная химия</h3>
 							<p class="production-card-text">Безусловно, сплочённость команды профессионалов позволяет оценить значение форм воздействия.</p>

@@ -1,5 +1,6 @@
 <?php
 $page_title = "Контрактное производство";
+$name_section = "contract-production";
 $header_style = "header-inner-page";
 $block_title = "";
 include_once('./tamplate-parts/header-page.php');
