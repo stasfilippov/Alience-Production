@@ -1955,7 +1955,9 @@ MEDIA-QUIRES
         flex-direction: column;
         gap: 0;
     }
-
+	.page-section-blog-wrapper {
+		grid-template-columns: 1fr;
+	}
 }
 
 
@@ -2635,6 +2637,28 @@ MEDIA-QUIRES
     .center-autohim {
         margin-bottom: 2.3rem;
     }
+	.header-inner-page-title {
+		margin-top: 2rem;
+	}
+	.page-section-blog {
+		margin-top: 4.2rem;
+	}
+	.page-section-blog-item {
+		min-height: 196px;
+	}
+	.page-section-blog-wrapper {
+		grid-gap: 0.86rem;
+		margin-bottom: 3.9rem;
+	}
+	.page-blog-footer {
+		justify-content: center;
+	}
+	.page-blog-list {
+		padding: 0;
+	}
+	.page-blog-item {
+		font-size: 1.5rem;
+	}
 }
 
 @media screen and (max-width: 374px) {
