@@ -114,7 +114,7 @@ const swiperBlog = new Swiper(".blog-slider", {
 	},
 });
 
-const swiperCenter = new Swiper(".center-slider", {
+/* const swiperCenter = new Swiper(".center-slider", {
 	speed: 400,
 	slidesPerView: "auto",
 	centeredSlides: true,
@@ -142,8 +142,22 @@ const swiperCenter = new Swiper(".center-slider", {
 			slidesPerView: 2,
 		}
     },
-});
-
+}); */
+const swiperCenter = new Swiper(".center-slider", {
+	speed: 400,
+	loop: true,
+	spaceBetween: 30,
+	navigation: {
+	  nextEl: ".center-button-next",
+	  prevEl: ".center-button-prev",
+	},
+	breakpoints: {
+	  // when window width is >= 992px
+	  992: {
+		slidesPerView: 2,
+	  },
+	},
+  });
 
 let currentModal; /* текущее модольное окно */
 let modalDialog; /* белое диологовое окно */

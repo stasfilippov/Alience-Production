@@ -1259,8 +1259,19 @@ body{
     object-fit: cover;
     z-index: 0;
 }
+.center-slider-wrapper .swiper {
+	overflow: visible;
+}
 .center-slider-footer {
     margin-top: 1.875rem;
+}
+.center-slider .swiper-slide {
+	opacity: 0.3;
+	transition: opacity 1s;
+}
+.center-slider .swiper-slide-active,
+.center-slider .swiper-slide-next {
+	opacity: 1;
 }
 /*========  СТИЛИ ВНУТРЕННЕЙ СТРАНИЦЫ блок MAKE-AUTOCHIM =========*/
 .make-autochim{
