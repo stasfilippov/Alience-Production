@@ -3,14 +3,14 @@ const logoLight = document.querySelector(".logo-light");
 const logoBlack = document.querySelector(".logo-black");
 const mMenuToggle = document.querySelector(".mobile-menu-toggle");
 const menu = document.querySelector(".mobile-menu");
-const isFront = document.body.classList.contains("front-page")
+const isFront = document.body.classList.contains("front-page");
 
 const lightModeOn = (event) => {
-	navbar.classList.add("navbar-light front");
+	navbar.classList.add("navbar-light");
 };
 
 const lightModeOff = (event) => {
-	navbar.classList.remove("navbar-light front");
+	navbar.classList.remove("navbar-light");
 };
 const changeNavHeight = (height) => {
 	navbar.style.height = height;
