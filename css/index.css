@@ -138,15 +138,35 @@ body{
     gap: .625rem;
     margin-right: 3.1rem;
 }
-.header-phone:hover,
-.header-button:hover,
-.btn:hover,
-.footer-phone:hover,
-.footer-info:hover,
-.footer-menu-item:hover,
-.footer-menu-title:hover,
-.footer-policy
-{
+.header-phone:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+.header-button:hover, .btn:hover {
+	background-color: #1a4a9f;
+	cursor: pointer;
+}
+.footer-phone:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+.footer-info:hover {
+	cursor: pointer;
+}
+.footer-menu-item:hover .footer-menu-link {
+	color: black;
+	cursor: pointer;
+}
+.footer-menu-title:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+.footer-policy:hover {
+	color:black;
+	cursor: pointer;
+}
+.footer-menu-bottom-3 li:hover {
+	text-decoration: underline;
 	cursor: pointer;
 }
 .phone{
@@ -174,6 +194,7 @@ body{
     background-color: #3A71D1;
     border: none;
     cursor: pointer;
+	transition: background-color 0.2s;
 }
 .header-button-icon{
     width: 1.5rem; 
@@ -873,6 +894,7 @@ body{
     line-height: 160%;
     color: #292D33;
     margin-right: 5.5rem;
+	text-decoration: none;
 }
 .footer-social-link{
     text-decoration: none;
@@ -1877,23 +1899,6 @@ MEDIA-QUIRES
         display: flex;
     }
 }
-/* @media screen and (max-width: 992px) {
-    .button-link, 
-	.production-card, 
-	.labels-card,
-	.client-logo-item, 
-	.header-phone:hover,
-	.header-button:hover,
-	.btn:hover,
-	.footer-phone:hover,
-	.footer-info:hover,
-	.footer-menu-item:hover,
-	.footer-menu-title:hover,
-	.footer-policy {
-        cursor:;
-		
-    }
-} */
 @media screen and (max-width: 900px) {
     .container {
         max-width: 60rem;
