@@ -169,7 +169,7 @@
 						факта: высококачественный прототип будущего проекта напрямую зависит от анализа существующих
 						паттернов поведения.
 					</p>
-					<button class="btn" data-toggle="modal" data-target="#feedback-modal">Подробнее о компании</button>
+					<a href="./about.php" class="btn" data-toggle="modal" data-target="#feedback-modal">Подробнее о компании</a>
 				</div>
 				<!-- /.header-content -->
 				<!-- Слайдер-header -->
@@ -242,7 +242,7 @@
 								<p class="step-descr">Безусловно, сплочённость команды профессионалов позволяет оценить
 									значение форм воздействия.</p>
 								<!-- /.step-descr -->
-								<a href="#" class="button-link">Оставить заявку</a>
+								<a href="#" class="button-link" data-toggle="modal" data-target="#feedback-modal">Оставить заявку</a>
 							</div>
 							<!-- /.step-item-w -->
 						</li>

@@ -181,13 +181,14 @@ body{
     display: none;
 }
 .btn {
-    font-weight: 600;
+	font-weight: 600;
     font-size: 1rem;
     line-height: 160%;
     padding: 1.625rem 3.8rem;
     color: #FFFFFF;
     background-color: #3A71D1;
     border: none;
+	text-decoration: none;
     cursor: pointer;
 } 
 .container{
@@ -1864,7 +1865,18 @@ MEDIA-QUIRES
     }
 }
 @media screen and (max-width: 992px) {
-    .button-link, .production-card, .labels-card,.client-logo-item{
+    .button-link, 
+	.production-card, 
+	.labels-card,
+	.client-logo-item, 
+	.header-phone:hover,
+	.header-button:hover,
+	.btn:hover,
+	.footer-phone:hover,
+	.footer-info:hover,
+	.footer-menu-item:hover,
+	.footer-menu-title:hover,
+	.footer-policy {
         pointer-events: none;
     }
 }
