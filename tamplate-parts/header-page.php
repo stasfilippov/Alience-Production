@@ -14,13 +14,13 @@
         <div class="mobile-menu">
             <ul class="mobile-menu-nav">
                 <li class="mobile-menu-nav-item">
-                    <a href="#" class="moble-menu-nav-link">О компании</a>
+                    <a href="./about.php" class="moble-menu-nav-link">О компании</a>
                 </li>
                 <li class="mobile-menu-nav-item">
-                    <a href="#" class="moble-menu-nav-link">Контрактное производство</a>
+                    <a href="./contracts.php" class="moble-menu-nav-link">Контрактное производство</a>
                     <ul class="mobile-submenu">
                         <li class="mobile-submenu-item">
-                            <a class="mobile-submenu-link" href="#">Автомобильная химия</a>
+                            <a class="mobile-submenu-link" href="./autochim.php">Автомобильная химия</a>
                         </li>
                         <li class="mobile-submenu-item">
                             <a class="mobile-submenu-link" href="#">Бытовая химия</a>
@@ -39,7 +39,7 @@
                     </ul>
                 </li>
                 <li class="mobile-menu-nav-item">
-                    <a href="#" class="moble-menu-nav-link">Собственные торговые марки</a>
+                    <a href="./products_labels.php" class="moble-menu-nav-link">Собственные торговые марки</a>
                     <ul class="mobile-submenu">
                         <li class="mobile-submenu-item">
                             <a class="mobile-submenu-link" href="#">Автохимия AG-Tech</a>
@@ -50,7 +50,7 @@
                     </ul>
                 </li>
                 <li class="mobile-menu-nav-item">
-                    <a href="#" class="moble-menu-nav-link">Новости</a>
+                    <a href="./blog.php" class="moble-menu-nav-link">Новости</a>
                 </li>
                 <li class="mobile-menu-nav-item">
                     <a href="#" class="moble-menu-nav-link">Контакты</a>
@@ -85,11 +85,13 @@
         <!-- /.mobile-menu -->
         
         <nav class="navbar navbar-light">
-            <a href="" class="mobile-menu-toggle">
-                <span class="mobile-menu-line"></span>
-                <span class="mobile-menu-line"></span>
-                <span class="mobile-menu-line"></span>
-            </a>
+			<a href="#" class="mobile-menu-toggle">
+				<span class="mobile-menu-toggle-wrapper">
+					<span class="mobile-menu-line"></span>
+					<span class="mobile-menu-line"></span>
+					<span class="mobile-menu-line"></span>
+				</span>
+			</a>
             <!-- /.mobile-menu-toggle -->
             <a href="./" class="header-logo">
                 <svg class="logo-svg logo-light">
@@ -102,16 +104,16 @@
             <!-- /.header-logo -->
             <ul class="header-nav">
                 <li class="header-nav-item">
-                    <a href="/about.php" class="header-nav-link">О компании</a>
+                    <a href="./about.php" class="header-nav-link">О компании</a>
                 </li>
                 <li class="header-nav-item">
-                    <a href="/contracts.php" class="header-nav-link">Контрактное производство</a>
+                    <a href="./contracts.php" class="header-nav-link">Контрактное производство</a>
                 </li>
                 <li class="header-nav-item">
-                    <a href="/products_labels.php" class="header-nav-link">Собственные торговые марки</a>
+                    <a href="./products_labels.php" class="header-nav-link">Собственные торговые марки</a>
                 </li>
                 <li class="header-nav-item">
-                    <a href="/blog.php" class="header-nav-link">Новости</a>
+                    <a href="./blog.php" class="header-nav-link">Новости</a>
                 </li>
                 <li class="header-nav-item">
                     <a href="#" class="header-nav-link">Контакты</a>
@@ -165,7 +167,7 @@
                     <li class="breadcrambs-item"
                     itemprop="itemListElement" itemscope
                     itemtype="https://schema.org/ListItem">
-                        <a href="/autohim.php" class="breadcrambs-link" itemprop="item">
+                        <a href="./autohim.php" class="breadcrambs-link" itemprop="item">
                             <span itemprop="name"><?= $page_title ?></span>
                         </a>
                         <meta itemprop="item" content="./autohim.php" />
@@ -174,7 +176,7 @@
                 </ol>
                 <?php 
                 if (!empty($Image_Bg)) {
-                    echo '<img src="/image/avto-him.png" alt="avto-him" class="header-inner-page-image">';
+                    echo '<img src="./image/avto-him.png" alt="avto-him" class="header-inner-page-image">';
                 }
                 ?>
             </div>

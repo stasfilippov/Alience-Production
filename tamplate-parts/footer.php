@@ -1,7 +1,7 @@
 <section class="section cta">
 	<div class="bg-gray section-cta">
+		<img class="cta-img" src="./image/cta.png" alt="call to action">
 		<div class="cta-form-wrapper container">
-			<img class="cta-img" src="./image/cta.png" alt="call to action">
 			<form action="handler.php" method="POST" class="cta-form">
 				<h2 class="cta-form-title">Хотите сотрудничать?</h2>
 				<p class="cta-form-text">Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!</p>
@@ -150,7 +150,7 @@
 						&copy; <?php echo date('Y')?> «Aliance Production». Все права защищены.
 					</p>
 					<!-- /.copyright -->
-					<a href="../privacy_policy.php" class="footer-policy">Политики конфиденциальности </a>
+					<a href="./privacy_policy.php" class="footer-policy">Политики конфиденциальности </a>
 					<!-- /.footer-policy -->
 				</div>
 				<!-- /.footer-legal -->

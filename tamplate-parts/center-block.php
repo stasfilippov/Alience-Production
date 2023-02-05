@@ -13,22 +13,22 @@
     <div class="swiper center-slider">
         <div class="swiper-wrapper">
             <a href="#" class="swiper-slide center-card">
-				<img src="/image/blog-post.jpg" alt="blog-photo" class="center-card-img">
+				<img src="./image/blog-post.jpg" alt="blog-photo" class="center-card-img">
             </a>
             <a href="#" class="swiper-slide center-card">
-				<img src="/image/blog-photo.jpg" alt="blog-photo" class="center-card-img">
+				<img src="./image/blog-photo.jpg" alt="blog-photo" class="center-card-img">
             </a>
             <a href="#" class="swiper-slide center-card">
-				<img src="/image/blog-post.jpg" alt="blog-photo" class="center-card-img">
+				<img src="./image/blog-post.jpg" alt="blog-photo" class="center-card-img">
             </a>
             <a href="#" class="swiper-slide center-card">
-				<img src="/image/blog-photo.jpg" alt="blog-photo" class="center-card-img">
+				<img src="./image/blog-photo.jpg" alt="blog-photo" class="center-card-img">
             </a>
             <a href="#" class="swiper-slide center-card">
-				<img src="/image/blog-post.jpg" alt="blog-photo" class="center-card-img">
+				<img src="./image/blog-post.jpg" alt="blog-photo" class="center-card-img">
             </a>
             <a href="#" class="swiper-slide center-card">
-				<img src="/image/blog-photo.jpg" alt="blog-photo" class="center-card-img">
+				<img src="./image/blog-photo.jpg" alt="blog-photo" class="center-card-img">
             </a>
         </div>
     </div>

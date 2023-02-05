@@ -668,19 +668,19 @@ body{
 /* СТИЛИ section-cta */
 .bg-gray{
     background: #F0F2F5;
+	position: relative;
+}
+.cta-img{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	max-width: 45rem;
 }
 .section-cta{
     position: relative;
     padding-top: 5.8rem;
     margin-top: 14rem;
     padding-bottom: 6.25rem;
-}
-.cta-img{
-	position: absolute;
-    bottom: -100px;
-    left: -222px;
-    max-width: 720px;
-    max-height: 626px;
 }
 .cta-form-wrapper{
     display: flex;
