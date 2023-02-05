@@ -344,16 +344,16 @@ body{
 	align-items:center;
 	text-decoration: none;
 }
-.button-link::before{
+.button-link:before{
 	content:"";
 	height: .0625rem;
 	background: #5C8EE6;
-	margin-right: 1.7rem;
-	width: 3rem;
+	margin-right: 20px;
+	width: 40px;
 	transition: width 0.2s;
 }
 .button-link:hover::before{
-	width: 3.2rem;
+	width: 60px;
 }
 .primary-buttons-wrapper{
     display: flex;
@@ -1579,16 +1579,8 @@ MEDIA-QUIRES
     .step-item-w .button-link{
         font-size: 1rem;
     }
-    .step-item-w .button-link::before{
-        width: 2.5rem;
-        margin-right: 1.3rem;
-    }
     .founder-content .button-link{
         font-size: 1rem;
-    }
-    .founder-content .button-link::before{
-        width: 2.5rem;
-        margin-right: 1.3rem;
     }
 }
 @media all and (max-width:1845px) {
@@ -1885,7 +1877,7 @@ MEDIA-QUIRES
         display: flex;
     }
 }
-@media screen and (max-width: 992px) {
+/* @media screen and (max-width: 992px) {
     .button-link, 
 	.production-card, 
 	.labels-card,
@@ -1898,9 +1890,10 @@ MEDIA-QUIRES
 	.footer-menu-item:hover,
 	.footer-menu-title:hover,
 	.footer-policy {
-        pointer-events: none;
+        cursor:;
+		
     }
-}
+} */
 @media screen and (max-width: 900px) {
     .container {
         max-width: 60rem;
@@ -2459,7 +2452,9 @@ MEDIA-QUIRES
     .modal-input {
         background-color: #fff;
     }
-    
+    .modal-success-btn {
+		min-width: 23.5625rem;
+	}
     .modal-input-group {
         background-color: #fff;
     }
