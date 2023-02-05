@@ -1,55 +1,55 @@
 <section class="section cta">
-		<div class="bg-gray section-cta">
-			<img src="/image/cta.png" alt="cta" class="cta-img">
-			<div class="cta-form-wrapper container">
-				<form action="handler.php" method="POST" class="cta-form">
-					<h2 class="cta-form-title">Хотите сотрудничать?</h2>
-					<p class="cta-form-text">Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!</p>
-					<div class="input-group-wrapper">
-						<div class="input-group">
-							<input 
-								id="user-name" 
-								type="text"
-                                name="username" 
-								class="input" 
-								placeholder=" "
-                                maxlength="100"
-                                required
-                                >
-							<label class="input-group-label" for="user-name">Имя</label>
-						</div>
-						<div class="input-group">
-							<input 
-								id="user-phone" 
-								type="tel"
-                                name="userphone" 
-								class="input phone-mask"
-								placeholder=" "
-                                maxlength="30"
-                                required
-								>
-							<label class="input-group-label" for="user-phone">Номер телефона</label>
-						</div>
+	<div class="bg-gray section-cta">
+		<div class="cta-form-wrapper container">
+			<img class="cta-img" src="./image/cta.png" alt="call to action">
+			<form action="handler.php" method="POST" class="cta-form">
+				<h2 class="cta-form-title">Хотите сотрудничать?</h2>
+				<p class="cta-form-text">Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!</p>
+				<div class="input-group-wrapper">
+					<div class="input-group">
+						<input 
+							id="user-name" 
+							type="text"
+							name="username" 
+							class="input" 
+							placeholder=" "
+							maxlength="100"
+							required
+							>
+						<label class="input-group-label" for="user-name">Имя</label>
 					</div>
-					<div class="cta-form-footer">
-						<button type="submit" class="btn cta-form-button">Отправить заявку</button>
-						<div class="notify">
-							<svg class="notify-icon" height="14" width="14">
-								<use href="icon/sprite.svg#notify"></use>
-							</svg>
-							<p class="notify-text">
-								Обращаясь к нам вы получаете не только профессиональную работу, но и абсолютную конфиденциальность информации!
-							</p>
-						</div>
+					<div class="input-group">
+						<input 
+							id="user-phone" 
+							type="tel"
+							name="userphone" 
+							class="input phone-mask"
+							placeholder=" "
+							maxlength="30"
+							required
+							>
+						<label class="input-group-label" for="user-phone">Номер телефона</label>
 					</div>
-					<!-- /.cta-form-footer -->
-				</form>
-				<!-- /.cta-form -->
-			</div>
-			<!-- /.cta-from-wrapper -->
+				</div>
+				<div class="cta-form-footer">
+					<button type="submit" class="btn cta-form-button">Отправить заявку</button>
+					<div class="notify">
+						<svg class="notify-icon" height="14" width="14">
+							<use href="icon/sprite.svg#notify"></use>
+						</svg>
+						<p class="notify-text">
+							Обращаясь к нам вы получаете не только профессиональную работу, но и абсолютную конфиденциальность информации!
+						</p>
+					</div>
+				</div>
+				<!-- /.cta-form-footer -->
+			</form>
+			<!-- /.cta-form -->
 		</div>
-		<!-- /.bg-gray -->
-	</section>
+		<!-- /.cta-from-wrapper -->
+	</div>
+	<!-- /.bg-gray -->
+</section>
 
 	<footer class="footer">
 		<div class="container">

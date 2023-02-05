@@ -40,6 +40,7 @@ mMenuToggle.addEventListener("click", (event) => {
 	menu.classList.contains("is-open") ? closeMenu() : openMenu();
 });
 
+
 const swiperFeatures = new Swiper(".features-slider", {
 	speed: 400,
 	slidesPerView: 1,
@@ -66,31 +67,32 @@ const swiperFeatures = new Swiper(".features-slider", {
 		},
 	},
 });
-
-const swiperSteps = new Swiper(".steps-slider", {
+const swiperStep = new Swiper(".steps-slider", {
 	speed: 400,
-	slidesPerView: 1,
-    spaceBetween: 30,
+	freeMode: true,
+	spaceBetween: 30,
 	navigation: {
-		nextEl: '.steps-button-next',
-		prevEl: '.steps-button-prev',
+	  nextEl: ".steps-button-next",
+	  prevEl: ".steps-button-prev",
 	},
-	
-    breakpoints: {
-        640: {
-			slidesPerView: 2,
-			spaceBetween: 20,
-        },
-        787: {
-			slidesPerView: 4,
-			spaceBetween: 40,
-        },
-        1024: {
-			slidesPerView: 5,
-			spaceBetween: 50,
-        },
-    },
-});
+	breakpoints: {
+	  // when window width is >= 576px
+	  0: {
+		slidesPerView: "auto",
+	  },
+	  // when window width is >= 768px
+	  768: {
+		slidesPerView: 2,
+	  },
+	  // when window width is >= 1024px
+	  1024: {
+		slidesPerView: 3,
+	  },
+	  1200: {
+		slidesPerView: 4,
+	  },
+	},
+  });
 
 const swiperBlog = new Swiper(".blog-slider", {
 	speed: 400,

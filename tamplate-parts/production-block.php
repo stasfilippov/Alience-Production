@@ -1,4 +1,8 @@
-<section class="section production contract-production">
+<section class="section production <?php 
+                if (!empty($name_section)) {
+                    echo $name_section;
+                }
+                ?>">
 			<div class="container">
                 <?php 
                 if (!empty($block_title)) {
