@@ -1243,12 +1243,14 @@ body{
     color: #828A99;
 }
 .center-card{
-    display: flex;
-    position: relative;
-    min-height: 25rem;
-    max-width: 43.75rem;
-    text-decoration: none;
-    color: #FFFFFF;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 30px;
+	position: relative;
+	min-height: 400px;
+	color: #fff;
+	margin-bottom: 30px;
 }
 .center-card-img{
     position: absolute;
@@ -1259,8 +1261,15 @@ body{
     object-fit: cover;
     z-index: 0;
 }
-.center-slider-wrapper .swiper {
-	overflow: visible;
+.center-wrapper .swiper {
+	overflow: hidden;
+	max-width: 100%;
+}
+.center-slider-wrapper {
+	display: flex;
+}
+.center .center-card {
+    gap: 50px;
 }
 .center-slider-footer {
     margin-top: 1.875rem;
@@ -1273,6 +1282,7 @@ body{
 .center-slider .swiper-slide-next {
 	opacity: 1;
 }
+
 /*========  СТИЛИ ВНУТРЕННЕЙ СТРАНИЦЫ блок MAKE-AUTOCHIM =========*/
 .make-autochim{
 	position: relative;

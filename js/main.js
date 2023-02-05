@@ -114,35 +114,7 @@ const swiperBlog = new Swiper(".blog-slider", {
 	},
 });
 
-/* const swiperCenter = new Swiper(".center-slider", {
-	speed: 400,
-	slidesPerView: "auto",
-	centeredSlides: true,
-	spaceBetween: 30,
-	loop: true,
-	navigation: {
-		nextEl: '.center-button-next',
-		prevEl: '.center-button-prev',
-	},
-	breakpoints: {
-		319: {
-			slidesPerView: 1,
-			spaceBetween: 10,
-			centeredSlides: true,
-		},
-		545: {
-			slidesPerView: 1,
-			centeredSlides: true,
-		},
-        780: {
-			slidesPerView: 1,
-			centeredSlides: true,
-        },
-		1024: {
-			slidesPerView: 2,
-		}
-    },
-}); */
+
 const swiperCenter = new Swiper(".center-slider", {
 	speed: 400,
 	loop: true,
@@ -157,7 +129,7 @@ const swiperCenter = new Swiper(".center-slider", {
 		slidesPerView: 2,
 	  },
 	},
-  });
+});
 
 let currentModal; /* текущее модольное окно */
 let modalDialog; /* белое диологовое окно */

@@ -11,21 +11,9 @@
     </div>
     <!-- /.container -->
     <div class="container">
-		<div class="center-slider-wrapper">
+		<div class="center-wrapper">
 			<div class="swiper center-slider">
-				<div class="swiper-wrapper">
-					<a href="#" class="swiper-slide center-card">
-						<img src="./image/blog-post.jpg" alt="blog-photo" class="center-card-img">
-					</a>
-					<a href="#" class="swiper-slide center-card">
-						<img src="./image/blog-photo.jpg" alt="blog-photo" class="center-card-img">
-					</a>
-					<a href="#" class="swiper-slide center-card">
-						<img src="./image/blog-post.jpg" alt="blog-photo" class="center-card-img">
-					</a>
-					<a href="#" class="swiper-slide center-card">
-						<img src="./image/blog-photo.jpg" alt="blog-photo" class="center-card-img">
-					</a>
+				<div class="swiper-wrapper center-slider-wrapper">
 					<a href="#" class="swiper-slide center-card">
 						<img src="./image/blog-post.jpg" alt="blog-photo" class="center-card-img">
 					</a>
@@ -55,3 +43,4 @@
         <!-- /.blog-slider-footer -->
     </div>
 </section>
+
