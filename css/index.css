@@ -138,6 +138,17 @@ body{
     gap: .625rem;
     margin-right: 3.1rem;
 }
+.header-phone:hover,
+.header-button:hover,
+.btn:hover,
+.footer-phone:hover,
+.footer-info:hover,
+.footer-menu-item:hover,
+.footer-menu-title:hover,
+.footer-policy
+{
+	cursor: pointer;
+}
 .phone{
     width: 1.5rem; 
     height: 1.5rem;
