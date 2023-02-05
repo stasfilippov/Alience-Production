@@ -4,6 +4,23 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="apple-touch-icon" sizes="57x57" href="favicon.ico/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="favicon.ico/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="favicon.ico/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="favicon.ico/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="favicon.ico/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="favicon.ico/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="favicon.ico/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="favicon.ico/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="favicon.ico/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="favicon.ico/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon.ico/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="favicon.ico/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon.ico/favicon-16x16.png">
+		<link rel="manifest" href="favicon.ico/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
 		<link rel="stylesheet" href="css/index.css">
 		<script>/*! modernizr 3.6.0 (Custom Build) | MIT *
 		* https://modernizr.com/download/?-webp-setclasses !*/
@@ -152,7 +169,7 @@
 						факта: высококачественный прототип будущего проекта напрямую зависит от анализа существующих
 						паттернов поведения.
 					</p>
-					<button class="btn" data-toggle="modal" data-target="#feedback-modal">Подробнее о компании</button>
+					<a href="./about.php" class="btn" data-toggle="modal" data-target="#feedback-modal">Подробнее о компании</a>
 				</div>
 				<!-- /.header-content -->
 				<!-- Слайдер-header -->
@@ -225,7 +242,7 @@
 								<p class="step-descr">Безусловно, сплочённость команды профессионалов позволяет оценить
 									значение форм воздействия.</p>
 								<!-- /.step-descr -->
-								<a href="#" class="button-link">Оставить заявку</a>
+								<a href="#" class="button-link" data-toggle="modal" data-target="#feedback-modal">Оставить заявку</a>
 							</div>
 							<!-- /.step-item-w -->
 						</li>
@@ -325,17 +342,17 @@
 					<div class="swiper-wrapper">
 						<!-- Slides -->
 						<a href="#" class="swiper-slide blog-card">
-							<img src="/image/blog-photo.jpg" alt="blog-photo" class="blog-card-img">
+							<img src="./image/blog-photo.jpg" alt="blog-photo" class="blog-card-img">
 							<h3 class="blog-card-title">Современная методология разработки одухотворила всех причастных</h3>
 							<p class="blog-card-text">Действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, в равной степени предоставлены...</p>
 						</a>
 						<a href="#" class="swiper-slide blog-card">
-							<img src="/image/blog-post.jpg" alt="blog-photo" class="blog-card-img">
+							<img src="./image/blog-post.jpg" alt="blog-photo" class="blog-card-img">
 							<h3 class="blog-card-title">Сложно сказать, почему жизнь прекрасна</h3>
 							<p class="blog-card-text">Сложно сказать, почему элементы политического процесса функционально разнесены на независимые элементы. Безусловно, высокотехнологичная...</p>
 						</a>
 						<a href="#" class="swiper-slide blog-card">
-							<img src="/image/blog-photo.jpg" alt="blog-photo" class="blog-card-img">
+							<img src="./image/blog-photo.jpg" alt="blog-photo" class="blog-card-img">
 							<h3 class="blog-card-title">Современная методология разработки одухотворила всех причастных</h3>
 							<p class="blog-card-text">Действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, в равной степени предоставлены... </p>
 						</a>

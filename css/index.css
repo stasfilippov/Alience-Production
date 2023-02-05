@@ -138,6 +138,37 @@ body{
     gap: .625rem;
     margin-right: 3.1rem;
 }
+.header-phone:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+.header-button:hover, .btn:hover {
+	background-color: #1a4a9f;
+	cursor: pointer;
+}
+.footer-phone:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+.footer-info:hover {
+	cursor: pointer;
+}
+.footer-menu-item:hover .footer-menu-link {
+	color: black;
+	cursor: pointer;
+}
+.footer-menu-title:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+.footer-policy:hover {
+	color:black;
+	cursor: pointer;
+}
+.footer-menu-bottom-3 li:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
 .phone{
     width: 1.5rem; 
     height: 1.5rem;
@@ -163,6 +194,7 @@ body{
     background-color: #3A71D1;
     border: none;
     cursor: pointer;
+	transition: background-color 0.2s;
 }
 .header-button-icon{
     width: 1.5rem; 
@@ -170,13 +202,14 @@ body{
     display: none;
 }
 .btn {
-    font-weight: 600;
+	font-weight: 600;
     font-size: 1rem;
     line-height: 160%;
     padding: 1.625rem 3.8rem;
     color: #FFFFFF;
     background-color: #3A71D1;
     border: none;
+	text-decoration: none;
     cursor: pointer;
 } 
 .container{
@@ -332,16 +365,16 @@ body{
 	align-items:center;
 	text-decoration: none;
 }
-.button-link::before{
+.button-link:before{
 	content:"";
 	height: .0625rem;
 	background: #5C8EE6;
-	margin-right: 1.7rem;
-	width: 3rem;
+	margin-right: 20px;
+	width: 40px;
 	transition: width 0.2s;
 }
 .button-link:hover::before{
-	width: 3.2rem;
+	width: 60px;
 }
 .primary-buttons-wrapper{
     display: flex;
@@ -861,6 +894,7 @@ body{
     line-height: 160%;
     color: #292D33;
     margin-right: 5.5rem;
+	text-decoration: none;
 }
 .footer-social-link{
     text-decoration: none;
@@ -1231,12 +1265,14 @@ body{
     color: #828A99;
 }
 .center-card{
-    display: flex;
-    position: relative;
-    min-height: 25rem;
-    max-width: 43.75rem;
-    text-decoration: none;
-    color: #FFFFFF;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 30px;
+	position: relative;
+	min-height: 400px;
+	color: #fff;
+	margin-bottom: 30px;
 }
 .center-card-img{
     position: absolute;
@@ -1247,9 +1283,28 @@ body{
     object-fit: cover;
     z-index: 0;
 }
+.center-wrapper .swiper {
+	overflow: hidden;
+	max-width: 100%;
+}
+.center-slider-wrapper {
+	display: flex;
+}
+.center .center-card {
+    gap: 50px;
+}
 .center-slider-footer {
     margin-top: 1.875rem;
 }
+.center-slider .swiper-slide {
+	opacity: 0.3;
+	transition: opacity 1s;
+}
+.center-slider .swiper-slide-active,
+.center-slider .swiper-slide-next {
+	opacity: 1;
+}
+
 /*========  СТИЛИ ВНУТРЕННЕЙ СТРАНИЦЫ блок MAKE-AUTOCHIM =========*/
 .make-autochim{
 	position: relative;
@@ -1546,16 +1601,8 @@ MEDIA-QUIRES
     .step-item-w .button-link{
         font-size: 1rem;
     }
-    .step-item-w .button-link::before{
-        width: 2.5rem;
-        margin-right: 1.3rem;
-    }
     .founder-content .button-link{
         font-size: 1rem;
-    }
-    .founder-content .button-link::before{
-        width: 2.5rem;
-        margin-right: 1.3rem;
     }
 }
 @media all and (max-width:1845px) {
@@ -1852,11 +1899,6 @@ MEDIA-QUIRES
         display: flex;
     }
 }
-@media screen and (max-width: 992px) {
-    .button-link, .production-card, .labels-card,.client-logo-item{
-        pointer-events: none;
-    }
-}
 @media screen and (max-width: 900px) {
     .container {
         max-width: 60rem;
@@ -1911,7 +1953,9 @@ MEDIA-QUIRES
         flex-direction: column;
         gap: 0;
     }
-
+	.page-section-blog-wrapper {
+		grid-template-columns: 1fr;
+	}
 }
 
 
@@ -2413,7 +2457,9 @@ MEDIA-QUIRES
     .modal-input {
         background-color: #fff;
     }
-    
+    .modal-success-btn {
+		min-width: 23.5625rem;
+	}
     .modal-input-group {
         background-color: #fff;
     }
@@ -2591,6 +2637,28 @@ MEDIA-QUIRES
     .center-autohim {
         margin-bottom: 2.3rem;
     }
+	.header-inner-page-title {
+		margin-top: 2rem;
+	}
+	.page-section-blog {
+		margin-top: 4.2rem;
+	}
+	.page-section-blog-item {
+		min-height: 196px;
+	}
+	.page-section-blog-wrapper {
+		grid-gap: 0.86rem;
+		margin-bottom: 3.9rem;
+	}
+	.page-blog-footer {
+		justify-content: center;
+	}
+	.page-blog-list {
+		padding: 0;
+	}
+	.page-blog-item {
+		font-size: 1.5rem;
+	}
 }
 
 @media screen and (max-width: 374px) {

@@ -10,28 +10,20 @@
         </div>
     </div>
     <!-- /.container -->
-    <div class="swiper center-slider">
-        <div class="swiper-wrapper">
-            <a href="#" class="swiper-slide center-card">
-				<img src="./image/blog-post.jpg" alt="blog-photo" class="center-card-img">
-            </a>
-            <a href="#" class="swiper-slide center-card">
-				<img src="./image/blog-photo.jpg" alt="blog-photo" class="center-card-img">
-            </a>
-            <a href="#" class="swiper-slide center-card">
-				<img src="./image/blog-post.jpg" alt="blog-photo" class="center-card-img">
-            </a>
-            <a href="#" class="swiper-slide center-card">
-				<img src="./image/blog-photo.jpg" alt="blog-photo" class="center-card-img">
-            </a>
-            <a href="#" class="swiper-slide center-card">
-				<img src="./image/blog-post.jpg" alt="blog-photo" class="center-card-img">
-            </a>
-            <a href="#" class="swiper-slide center-card">
-				<img src="./image/blog-photo.jpg" alt="blog-photo" class="center-card-img">
-            </a>
-        </div>
-    </div>
+    <div class="container">
+		<div class="center-wrapper">
+			<div class="swiper center-slider">
+				<div class="swiper-wrapper center-slider-wrapper">
+					<a href="#" class="swiper-slide center-card">
+						<img src="./image/blog-post.jpg" alt="blog-photo" class="center-card-img">
+					</a>
+					<a href="#" class="swiper-slide center-card">
+						<img src="./image/blog-photo.jpg" alt="blog-photo" class="center-card-img">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
     <div class="container">
         <!-- If we need navigation buttons -->
         <div class="center-slider-footer">
@@ -51,3 +43,4 @@
         <!-- /.blog-slider-footer -->
     </div>
 </section>
+

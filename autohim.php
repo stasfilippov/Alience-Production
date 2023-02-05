@@ -136,8 +136,7 @@ include_once("./tamplate-parts/page-header-descr-block.php"); ?>
                         <p class="step-descr">Безусловно, сплочённость команды профессионалов позволяет оценить
                             значение форм воздействия.</p>
                         <!-- /.step-descr -->
-                        <a href="#" class="button-link">Оставить заявку</a>
-                    </div>
+						<a href="#" class="button-link" data-toggle="modal" data-target="#feedback-modal">Оставить заявку</a>                    </div>
                     <!-- /.step-item-w -->
                 </li>
                 <!-- /.step-item -->

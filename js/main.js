@@ -114,36 +114,22 @@ const swiperBlog = new Swiper(".blog-slider", {
 	},
 });
 
+
 const swiperCenter = new Swiper(".center-slider", {
 	speed: 400,
-	slidesPerView: "auto",
-	centeredSlides: true,
-	spaceBetween: 30,
 	loop: true,
+	spaceBetween: 30,
 	navigation: {
-		nextEl: '.center-button-next',
-		prevEl: '.center-button-prev',
+	  nextEl: ".center-button-next",
+	  prevEl: ".center-button-prev",
 	},
 	breakpoints: {
-		319: {
-			slidesPerView: 1,
-			spaceBetween: 10,
-			centeredSlides: true,
-		},
-		545: {
-			slidesPerView: 1,
-			centeredSlides: true,
-		},
-        780: {
-			slidesPerView: 1,
-			centeredSlides: true,
-        },
-		1024: {
-			slidesPerView: 2,
-		}
-    },
+	  // when window width is >= 992px
+	  992: {
+		slidesPerView: 2,
+	  },
+	},
 });
-
 
 let currentModal; /* текущее модольное окно */
 let modalDialog; /* белое диологовое окно */
@@ -192,6 +178,12 @@ forms.forEach((form) => {
 				rule: 'required',
 				errorMessage: "Укажите телефон",
 			},
+			{
+				rule: 'minLength',
+        		value: 16,
+       			errorMessage: 'Заполните полностью',
+			}
+			
 		])
 		.onSuccess((event) => {
 			const thisForm = event.target; // наша функция
@@ -290,3 +282,26 @@ const prefixNumber = (str) => {
 	  input.value = result;
 	}
   });
+
+function hasTouch() {
+	return 'ontouchstart' in document.documentElement
+			|| navigator.maxTouchPoints > 0
+			|| navigator.msMaxTouchPoints > 0;
+	}
+
+	if (hasTouch()) { // remove all the :hover stylesheets
+	try { // prevent exception on browsers not supporting DOM styleSheets properly
+		for (var si in document.styleSheets) {
+		var styleSheet = document.styleSheets[si];
+		if (!styleSheet.rules) continue;
+
+		for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
+			if (!styleSheet.rules[ri].selectorText) continue;
+
+			if (styleSheet.rules[ri].selectorText.match(':hover')) {
+			styleSheet.deleteRule(ri);
+			}
+		}
+		}
+	} catch (ex) {}
+}
