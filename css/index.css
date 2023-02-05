@@ -1841,6 +1841,10 @@ MEDIA-QUIRES
     .close-menu .mobile-menu-line:nth-child(1) {
         transform: rotate(45deg) translateY(9px);
     }
+	.close-menu .mobile-menu-line:nth-child(1), .close-menu .mobile-menu-line:nth-child(3) {
+		top: 50%;
+		transform-origin: center;
+	}
     .close-menu .mobile-menu-line:nth-child(3) {
         transform: rotate(-45deg) translateY(-9px);
     }
